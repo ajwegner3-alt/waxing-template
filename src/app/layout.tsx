@@ -15,6 +15,9 @@ import type { Metadata } from "next";
 import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { clientConfig } from "@/content/client.config";
+import { NavProvider, Header } from "@/components/layout";
+import { SchemaScript } from "@/components/ui";
+import { generateWaxingBusinessSchema } from "@/lib/schema";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -43,7 +46,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${fraunces.variable} ${plusJakartaSans.variable}`}>
       <body className="antialiased noise-texture">
-        <main>{children}</main>
+        <NavProvider>
+          <Header />
+          {/* Plan 02-02 adds: MobileNav, Footer, BookingBar */}
+          <main className="pt-16 lg:pt-20 pb-20 lg:pb-0">
+            {children}
+          </main>
+        </NavProvider>
+        <SchemaScript schema={generateWaxingBusinessSchema(clientConfig)} />
       </body>
     </html>
   );
