@@ -9,12 +9,12 @@ See: .planning/PROJECT.md (updated 2026-03-28)
 
 ## Current Position
 
-Phase: 4 of 10 (Homepage) — In Progress
-Plan: 1 of 2 in current phase — Plan 01 complete
-Status: In progress
-Last activity: 2026-03-29 — Completed 04-01-PLAN.md (HomepageHero, TrustBar, WhatToExpect, FirstTimerSpotlight)
+Phase: 4 of 10 (Homepage) — Complete
+Plan: 2 of 2 in current phase — Both plans complete
+Status: Phase complete — ready for Phase 5
+Last activity: 2026-03-29 — Completed 04-02-PLAN.md (ServicesPreview, TestimonialsGrid, EstheticianIntro, FinalCTA, barrel export, page.tsx)
 
-Progress: [████░░░░░░] 35%
+Progress: [████░░░░░░] 40%
 
 ## Performance Metrics
 
@@ -30,7 +30,7 @@ Progress: [████░░░░░░] 35%
 | 01-foundation | 2/2 | 13 min | 6.5 min |
 | 02-layout-shell | 2/2 | 5 min | 2.5 min |
 | 03-data-layer | 2/2 | ~4 min | ~2 min |
-| 04-homepage | 1/2 | 3 min | 3 min |
+| 04-homepage | 2/2 | 5 min | 2.5 min |
 
 **Recent Trend:**
 - Last 5 plans: 4 min, 2 min, 3 min, 2 min, 3 min
@@ -73,6 +73,10 @@ Recent decisions affecting current work:
   - Phase 4 plan 01: Homepage sections are Server Components + FadeUp wrapper pattern — no use client escalation needed for entrance animation
   - Phase 4 plan 01: Service.price is nullable — use ?? fallback in components; never rely on price being non-null without a guard
   - Phase 4 plan 01: Inline SVGs preferred over icon library for small icon sets (4 icons); no new npm dependency added
+  - Phase 4 plan 02: bio.slice(0, 2) in EstheticianIntro — two paragraphs gives personal context without wall of text on homepage
+  - Phase 4 plan 02: BookingLink white override via !bg-white className in FinalCTA — cleaner than a new variant for honey-gold bg inversion
+  - Phase 4 plan 02: Barrel export at src/components/homepage/index.ts — all 8 sections importable from single path
+  - Phase 4 plan 02: page.tsx thin composer pattern — only metadata + section render order, no layout logic
 
 ### Pending Todos
 
@@ -80,10 +84,10 @@ None.
 
 ### Blockers/Concerns
 
-None — Phase 4 Plan 01 complete. 4 homepage section components operational.
+None — Phase 4 complete. Homepage renders all 8 sections at /. Ready for Phase 5 (Services pages).
 
 ## Session Continuity
 
 Last session: 2026-03-29
-Stopped at: Completed 04-01-PLAN.md — 4 homepage sections built and committed
+Stopped at: Completed 04-02-PLAN.md — homepage complete, all 8 sections committed
 Resume file: None
