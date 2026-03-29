@@ -9,11 +9,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Foundation
 
-- [ ] **FOUND-01**: Design token system with warm botanical palette (cream #FBF8F3, sage, forest green) in Tailwind v4 config
-- [ ] **FOUND-02**: Typography system using Fraunces (display) + Plus Jakarta Sans (body) via next/font
-- [ ] **FOUND-03**: Reusable UI primitives: buttons, cards, badges, section containers with consistent spacing
-- [ ] **FOUND-04**: Client config file (client.config.ts) with all business info, colors, and booking URL
-- [ ] **FOUND-05**: TypeScript interfaces for all content types (Service, ServiceCategory, Staff, FAQ, ServiceArea, Testimonial)
+- [x] **FOUND-01**: Design token system with warm botanical palette (cream #FBF8F3, sage, forest green) in Tailwind v4 config
+- [x] **FOUND-02**: Typography system using Fraunces (display) + Plus Jakarta Sans (body) via next/font
+- [x] **FOUND-03**: Reusable UI primitives: buttons, cards, badges, section containers with consistent spacing
+- [x] **FOUND-04**: Client config file (client.config.ts) with all business info, colors, and booking URL
+- [x] **FOUND-05**: TypeScript interfaces for all content types (Service, ServiceCategory, Staff, FAQ, ServiceArea, Testimonial)
 
 ### Layout
 
@@ -137,11 +137,11 @@ Deferred to future release. Tracked but not in current roadmap.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUND-01 | Phase 1 | Pending |
-| FOUND-02 | Phase 1 | Pending |
-| FOUND-03 | Phase 1 | Pending |
-| FOUND-04 | Phase 1 | Pending |
-| FOUND-05 | Phase 1 | Pending |
+| FOUND-01 | Phase 1 | Complete |
+| FOUND-02 | Phase 1 | Complete |
+| FOUND-03 | Phase 1 | Complete |
+| FOUND-04 | Phase 1 | Complete |
+| FOUND-05 | Phase 1 | Complete |
 | LAYOUT-01 | Phase 2 | Pending |
 | LAYOUT-02 | Phase 2 | Pending |
 | LAYOUT-03 | Phase 2 | Pending |

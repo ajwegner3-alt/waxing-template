@@ -12,7 +12,7 @@ A complete Next.js website template for waxing studios, built to make first-time
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Design tokens, TypeScript types, UI primitives, and client config
+- [x] **Phase 1: Foundation** - Design tokens, TypeScript types, UI primitives, and client config ✓
 - [ ] **Phase 2: Layout Shell** - Header, footer, mobile nav, sticky booking bar
 - [ ] **Phase 3: Data Layer** - Service catalog, FAQs, staff, testimonials, service areas
 - [ ] **Phase 4: Homepage** - Full homepage with first-timer pathway and trust signals
@@ -38,8 +38,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Project scaffold, globals.css @theme tokens, font setup, and client.config.ts
-- [ ] 01-02-PLAN.md — TypeScript interfaces (lib/types.ts), schema/metadata helpers, and UI primitives
+- [x] 01-01-PLAN.md — Project scaffold, globals.css @theme tokens, font setup, and client.config.ts
+- [x] 01-02-PLAN.md — TypeScript interfaces (lib/types.ts), schema/metadata helpers, and UI primitives
 
 ### Phase 2: Layout Shell
 **Goal**: Header, footer, mobile nav, sticky booking bar, and breadcrumb shell are present on every route so pages can be previewed as real pages from the start.
@@ -190,7 +190,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/2 | Not started | - |
+| 1. Foundation | 2/2 | Complete ✓ | 2026-03-28 |
 | 2. Layout Shell | 0/2 | Not started | - |
 | 3. Data Layer | 0/2 | Not started | - |
 | 4. Homepage | 0/2 | Not started | - |
