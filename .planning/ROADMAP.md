@@ -67,11 +67,11 @@ Plans:
   3. Staff/esthetician profiles exist with all required fields populated
   4. 8+ testimonials exist with service, star rating, and quote fields
   5. 5+ Omaha neighborhood service area records exist with localized descriptions
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 03-01: Service catalog data files (all categories, index accessors)
-- [ ] 03-02: FAQ, staff, testimonials, and service area data files
+- [ ] 03-01-PLAN.md — Service catalog: 14 services across 4 categories, slug constants, categories.ts, index.ts with accessor functions
+- [ ] 03-02-PLAN.md — FAQs (16+), staff profile (Maya Chen), testimonials (9), service areas (6 Omaha neighborhoods)
 
 ### Phase 4: Homepage
 **Goal**: First-time visitors land on a page that immediately communicates warmth, addresses waxing anxiety, presents the First-Timer Package, and delivers a clear path to booking.
