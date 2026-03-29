@@ -15,7 +15,7 @@ import type { Metadata } from "next";
 import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { clientConfig } from "@/content/client.config";
-import { NavProvider, Header } from "@/components/layout";
+import { NavProvider, Header, MobileNav, Footer, BookingBar } from "@/components/layout";
 import { SchemaScript } from "@/components/ui";
 import { generateWaxingBusinessSchema } from "@/lib/schema";
 
@@ -48,10 +48,12 @@ export default function RootLayout({
       <body className="antialiased noise-texture">
         <NavProvider>
           <Header />
-          {/* Plan 02-02 adds: MobileNav, Footer, BookingBar */}
+          <MobileNav />
           <main className="pt-16 lg:pt-20 pb-20 lg:pb-0">
             {children}
           </main>
+          <Footer />
+          <BookingBar />
         </NavProvider>
         <SchemaScript schema={generateWaxingBusinessSchema(clientConfig)} />
       </body>
