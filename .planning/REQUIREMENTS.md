@@ -168,7 +168,6 @@ Deferred to future release. Tracked but not in current roadmap.
 | SVC-06 | Phase 5 | Pending |
 | TRUST-01 | Phase 6 | Pending |
 | TRUST-02 | Phase 6 | Pending |
-| TRUST-03 | Phase 6 | Pending |
 | TRUST-04 | Phase 6 | Pending |
 | TRUST-05 | Phase 6 | Pending |
 | TRUST-06 | Phase 6 | Pending |
@@ -178,28 +177,29 @@ Deferred to future release. Tracked but not in current roadmap.
 | BOOK-04 | Phase 7 | Pending |
 | BOOK-05 | Phase 7 | Pending |
 | BOOK-06 | Phase 7 | Pending |
+| TRUST-03 | Phase 8 | Pending |
 | SEO-01 | Phase 8 | Pending |
 | SEO-02 | Phase 8 | Pending |
 | SEO-03 | Phase 8 | Pending |
 | SEO-04 | Phase 8 | Pending |
 | SEO-05 | Phase 8 | Pending |
-| SEO-06 | Phase 8 | Pending |
 | SEO-07 | Phase 8 | Pending |
-| BLOG-01 | Phase 8 | Pending |
-| BLOG-02 | Phase 8 | Pending |
-| BLOG-03 | Phase 8 | Pending |
-| BLOG-04 | Phase 8 | Pending |
-| CONV-01 | Phase 9 | Pending |
-| CONV-02 | Phase 9 | Pending |
-| CONV-03 | Phase 9 | Pending |
-| CONV-04 | Phase 9 | Pending |
-| CONV-05 | Phase 9 | Pending |
+| CONV-01 | Phase 8 | Pending |
+| CONV-02 | Phase 8 | Pending |
+| CONV-03 | Phase 8 | Pending |
+| CONV-04 | Phase 8 | Pending |
+| CONV-05 | Phase 8 | Pending |
+| SEO-06 | Phase 9 | Pending |
+| BLOG-01 | Phase 9 | Pending |
+| BLOG-02 | Phase 9 | Pending |
+| BLOG-03 | Phase 9 | Pending |
+| BLOG-04 | Phase 9 | Pending |
 
 **Coverage:**
-- v1 requirements: 53 total
-- Mapped to phases: 53
+- v1 requirements: 57 total
+- Mapped to phases: 57
 - Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-28*
-*Last updated: 2026-03-28 after initial definition*
+*Last updated: 2026-03-28 after roadmap creation — phase assignments finalized*
