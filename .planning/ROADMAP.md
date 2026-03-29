@@ -83,11 +83,11 @@ Plans:
   3. A "What to Expect" section walks through first-visit steps before any booking ask
   4. Google aggregate rating, years in business, client count, and certifications appear as a trust signals bar
   5. A testimonials section shows 3+ reviews with reviewer name and service, placed adjacent to a booking CTA
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 04-01: HomepageHero, ServicesPreviewGrid, FirstTimerSection
-- [ ] 04-02: TrustSignals bar, TestimonialCarousel, EsteticianIntro, FinalCTA
+- [ ] 04-01-PLAN.md — HomepageHero, TrustBar, WhatToExpect, FirstTimerSpotlight (top-of-page conversion funnel)
+- [ ] 04-02-PLAN.md — ServicesPreview, TestimonialsGrid, EstheticianIntro, FinalCTA, barrel export, page.tsx composer
 
 ### Phase 5: Service Pages
 **Goal**: Prospective clients can browse services by category, see transparent pricing with descriptions, and drill into individual service pages that address prep, aftercare, and sensitivity — the highest-intent conversion pages on the site.
@@ -186,7 +186,7 @@ Plans:
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
