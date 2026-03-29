@@ -9,12 +9,12 @@ See: .planning/PROJECT.md (updated 2026-03-28)
 
 ## Current Position
 
-Phase: 2 of 10 (Layout Shell) — COMPLETE
+Phase: 3 of 10 (Data Layer) — In progress
 Plan: 2 of 2 in current phase — Plan 02 complete
 Status: Phase complete
-Last activity: 2026-03-29 — Completed 02-02-PLAN.md (MobileNav + BookingBar + Footer + Breadcrumbs)
+Last activity: 2026-03-29 — Completed 03-02-PLAN.md (FAQs + Staff + Testimonials + Service Areas)
 
-Progress: [███░░░░░░░] 20%
+Progress: [████░░░░░░] 30%
 
 ## Performance Metrics
 
@@ -29,9 +29,10 @@ Progress: [███░░░░░░░] 20%
 |-------|-------|-------|----------|
 | 01-foundation | 2/2 | 13 min | 6.5 min |
 | 02-layout-shell | 2/2 | 5 min | 2.5 min |
+| 03-data-layer | 2/2 | ~4 min | ~2 min |
 
 **Recent Trend:**
-- Last 5 plans: 9 min, 4 min, 2 min, 3 min
+- Last 5 plans: 9 min, 4 min, 2 min, 3 min, 2 min
 - Trend: Accelerating
 
 *Updated after each plan completion*
@@ -63,6 +64,8 @@ Recent decisions affecting current work:
 - Phase 2: BookingBar z-40, MobileNav backdrop z-40, MobileNav drawer z-50 — z-index layering established
 - Phase 2: Breadcrumbs defers BreadcrumbList schema to Phase 8 — pure UI component
 - Phase 3: Service type needs waxing-specific fields (sensitiveSkintSafe, painLevel, preparation[], aftercare[]) — NOW IMPLEMENTED
+- Phase 3: Service area testimonials set to empty array [] in data file — components filter global testimonials at render time, no data duplication
+- Phase 3: Bellevue service area uses Offutt AFB military angle as primary differentiator — genuinely distinct from suburban Papillion entry
 - Phase 7: Booking flow is front-end only; external handoff is a generic clientConfig.bookingUrl — no Vagaro/Booksy hard-coding
 
 ### Pending Todos
@@ -71,10 +74,10 @@ None.
 
 ### Blockers/Concerns
 
-None — Phase 2 is complete. Full layout shell operational.
+None — Phase 3 is complete. Full data layer operational.
 
 ## Session Continuity
 
-Last session: 2026-03-29T17:04:53Z
-Stopped at: Completed 02-02-PLAN.md — Full layout shell complete (MobileNav + BookingBar + Footer + Breadcrumbs)
+Last session: 2026-03-29T17:47:52Z
+Stopped at: Completed 03-02-PLAN.md — Supporting content layer (FAQs + Staff + Testimonials + Service Areas)
 Resume file: None
