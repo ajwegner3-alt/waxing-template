@@ -5,33 +5,33 @@
 See: .planning/PROJECT.md (updated 2026-03-28)
 
 **Core value:** First-time waxing clients must feel safe enough to book — every design decision serves this emotional goal.
-**Current focus:** Phase 2 in progress — Plan 01 complete, Plan 02 next
+**Current focus:** Phase 2 complete — Phase 3 next
 
 ## Current Position
 
-Phase: 2 of 10 (Layout Shell)
-Plan: 1 of 2 in current phase — Plan 01 complete
-Status: In progress
-Last activity: 2026-03-29 — Completed 02-01-PLAN.md (NavContext + Header + layout wiring)
+Phase: 2 of 10 (Layout Shell) — COMPLETE
+Plan: 2 of 2 in current phase — Plan 02 complete
+Status: Phase complete
+Last activity: 2026-03-29 — Completed 02-02-PLAN.md (MobileNav + BookingBar + Footer + Breadcrumbs)
 
-Progress: [██░░░░░░░░] 15%
+Progress: [███░░░░░░░] 20%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3
-- Average duration: 4.7 min
-- Total execution time: 0.23 hours
+- Total plans completed: 4
+- Average duration: 4.3 min
+- Total execution time: 0.29 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation | 2/2 | 13 min | 6.5 min |
-| 02-layout-shell | 1/2 | 2 min | 2 min |
+| 02-layout-shell | 2/2 | 5 min | 2.5 min |
 
 **Recent Trend:**
-- Last 5 plans: 9 min, 4 min, 2 min
+- Last 5 plans: 9 min, 4 min, 2 min, 3 min
 - Trend: Accelerating
 
 *Updated after each plan completion*
@@ -58,6 +58,10 @@ Recent decisions affecting current work:
 - Phase 2: SchemaScript placed outside NavProvider in layout.tsx — no nav dependency
 - Phase 2: NAV_LINKS has 5 items: Services, First Visit, About, FAQ, Contact — no Home in desktop nav
 - Phase 2: Import from motion/react (not framer-motion) — locked convention from Phase 1 FadeUp.tsx
+- Phase 2: Social fields are top-level on clientConfig (instagramUrl, facebookUrl, tiktokUrl) — NOT nested in social{} object — any plan template using social.instagram is wrong for this template
+- Phase 2: env(safe-area-inset-bottom) must be inline style — Tailwind cannot interpolate CSS env() functions
+- Phase 2: BookingBar z-40, MobileNav backdrop z-40, MobileNav drawer z-50 — z-index layering established
+- Phase 2: Breadcrumbs defers BreadcrumbList schema to Phase 8 — pure UI component
 - Phase 3: Service type needs waxing-specific fields (sensitiveSkintSafe, painLevel, preparation[], aftercare[]) — NOW IMPLEMENTED
 - Phase 7: Booking flow is front-end only; external handoff is a generic clientConfig.bookingUrl — no Vagaro/Booksy hard-coding
 
@@ -67,10 +71,10 @@ None.
 
 ### Blockers/Concerns
 
-None.
+None — Phase 2 is complete. Full layout shell operational.
 
 ## Session Continuity
 
-Last session: 2026-03-29T16:59:21Z
-Stopped at: Completed 02-01-PLAN.md — NavContext + Header + layout wiring complete
+Last session: 2026-03-29T17:04:53Z
+Stopped at: Completed 02-02-PLAN.md — Full layout shell complete (MobileNav + BookingBar + Footer + Breadcrumbs)
 Resume file: None
