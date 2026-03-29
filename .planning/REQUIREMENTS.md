@@ -17,11 +17,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Layout
 
-- [ ] **LAYOUT-01**: Responsive header with logo, navigation (max 5 items), and "Book Now" CTA button
-- [ ] **LAYOUT-02**: Mobile navigation drawer with smooth open/close transitions
-- [ ] **LAYOUT-03**: Footer with contact info, hours, quick links, social media links, and cancellation policy
-- [ ] **LAYOUT-04**: Sticky mobile CTA bar (Book Now + Call) visible on all pages, hidden on desktop
-- [ ] **LAYOUT-05**: Consistent page layout shell with breadcrumbs on interior pages
+- [x] **LAYOUT-01**: Responsive header with logo, navigation (max 5 items), and "Book Now" CTA button
+- [x] **LAYOUT-02**: Mobile navigation drawer with smooth open/close transitions
+- [x] **LAYOUT-03**: Footer with contact info, hours, quick links, social media links, and cancellation policy
+- [x] **LAYOUT-04**: Sticky mobile CTA bar (Book Now + Call) visible on all pages, hidden on desktop
+- [x] **LAYOUT-05**: Consistent page layout shell with breadcrumbs on interior pages
 
 ### Data Layer
 
@@ -142,11 +142,11 @@ Deferred to future release. Tracked but not in current roadmap.
 | FOUND-03 | Phase 1 | Complete |
 | FOUND-04 | Phase 1 | Complete |
 | FOUND-05 | Phase 1 | Complete |
-| LAYOUT-01 | Phase 2 | Pending |
-| LAYOUT-02 | Phase 2 | Pending |
-| LAYOUT-03 | Phase 2 | Pending |
-| LAYOUT-04 | Phase 2 | Pending |
-| LAYOUT-05 | Phase 2 | Pending |
+| LAYOUT-01 | Phase 2 | Complete |
+| LAYOUT-02 | Phase 2 | Complete |
+| LAYOUT-03 | Phase 2 | Complete |
+| LAYOUT-04 | Phase 2 | Complete |
+| LAYOUT-05 | Phase 2 | Complete |
 | DATA-01 | Phase 3 | Pending |
 | DATA-02 | Phase 3 | Pending |
 | DATA-03 | Phase 3 | Pending |
