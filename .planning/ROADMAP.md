@@ -51,11 +51,11 @@ Plans:
   3. Sticky booking bar (Book Now + Call) is visible without scrolling on a 390px viewport and hidden on desktop
   4. Footer displays contact info, hours, quick links, social links, and cancellation policy
   5. Interior pages show breadcrumbs via the consistent page layout shell
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 02-01: Root layout.tsx, Header, desktop nav, Book Now CTA, NavContext
-- [ ] 02-02: MobileNav drawer, StickyBookingBar, Footer, breadcrumb shell
+- [ ] 02-01-PLAN.md — NavContext, scroll-aware Header (transparent-to-solid), desktop nav, Book Now CTA, root layout.tsx wiring
+- [ ] 02-02-PLAN.md — MobileNav AnimatePresence drawer, StickyBookingBar, 4-column dark Footer, Breadcrumbs shell
 
 ### Phase 3: Data Layer
 **Goal**: All content data exists as typed TypeScript files so every downstream page and component can pull real content with no placeholder text.
