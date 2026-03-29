@@ -25,11 +25,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Data Layer
 
-- [ ] **DATA-01**: Service catalog with 12+ services across categories (face, body, intimate, packages) with pricing, descriptions, duration, and sensitivity level
-- [ ] **DATA-02**: FAQ dataset with 15+ questions organized by anxiety category (pain, prep, privacy, hygiene, aftercare)
-- [ ] **DATA-03**: Staff/esthetician profiles with name, photo placeholder, bio, specialties, and philosophy
-- [ ] **DATA-04**: Testimonial dataset with 8+ reviews including name, service, star rating, and quote
-- [ ] **DATA-05**: Service area data for 5+ Omaha neighborhoods with localized descriptions
+- [x] **DATA-01**: Service catalog with 12+ services across categories (face, body, intimate, packages) with pricing, descriptions, duration, and sensitivity level
+- [x] **DATA-02**: FAQ dataset with 15+ questions organized by anxiety category (pain, prep, privacy, hygiene, aftercare)
+- [x] **DATA-03**: Staff/esthetician profiles with name, photo placeholder, bio, specialties, and philosophy
+- [x] **DATA-04**: Testimonial dataset with 8+ reviews including name, service, star rating, and quote
+- [x] **DATA-05**: Service area data for 5+ Omaha neighborhoods with localized descriptions
 
 ### Homepage
 
@@ -147,11 +147,11 @@ Deferred to future release. Tracked but not in current roadmap.
 | LAYOUT-03 | Phase 2 | Complete |
 | LAYOUT-04 | Phase 2 | Complete |
 | LAYOUT-05 | Phase 2 | Complete |
-| DATA-01 | Phase 3 | Pending |
-| DATA-02 | Phase 3 | Pending |
-| DATA-03 | Phase 3 | Pending |
-| DATA-04 | Phase 3 | Pending |
-| DATA-05 | Phase 3 | Pending |
+| DATA-01 | Phase 3 | Complete |
+| DATA-02 | Phase 3 | Complete |
+| DATA-03 | Phase 3 | Complete |
+| DATA-04 | Phase 3 | Complete |
+| DATA-05 | Phase 3 | Complete |
 | HOME-01 | Phase 4 | Pending |
 | HOME-02 | Phase 4 | Pending |
 | HOME-03 | Phase 4 | Pending |

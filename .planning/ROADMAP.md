@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Design tokens, TypeScript types, UI primitives, and client config ✓
 - [x] **Phase 2: Layout Shell** - Header, footer, mobile nav, sticky booking bar ✓
-- [ ] **Phase 3: Data Layer** - Service catalog, FAQs, staff, testimonials, service areas
+- [x] **Phase 3: Data Layer** - Service catalog, FAQs, staff, testimonials, service areas ✓
 - [ ] **Phase 4: Homepage** - Full homepage with first-timer pathway and trust signals
 - [ ] **Phase 5: Service Pages** - Service menu and individual service detail pages
 - [ ] **Phase 6: Trust Pages** - About page and FAQ page
@@ -70,8 +70,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 03-01-PLAN.md — Service catalog: 14 services across 4 categories, slug constants, categories.ts, index.ts with accessor functions
-- [ ] 03-02-PLAN.md — FAQs (16+), staff profile (Maya Chen), testimonials (9), service areas (6 Omaha neighborhoods)
+- [x] 03-01-PLAN.md — Service catalog: 14 services across 4 categories, slug constants, categories.ts, index.ts with accessor functions
+- [x] 03-02-PLAN.md — FAQs (16+), staff profile (Maya Chen), testimonials (9), service areas (6 Omaha neighborhoods)
 
 ### Phase 4: Homepage
 **Goal**: First-time visitors land on a page that immediately communicates warmth, addresses waxing anxiety, presents the First-Timer Package, and delivers a clear path to booking.
@@ -192,7 +192,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete ✓ | 2026-03-28 |
 | 2. Layout Shell | 2/2 | Complete ✓ | 2026-03-29 |
-| 3. Data Layer | 0/2 | Not started | - |
+| 3. Data Layer | 2/2 | Complete ✓ | 2026-03-29 |
 | 4. Homepage | 0/2 | Not started | - |
 | 5. Service Pages | 0/2 | Not started | - |
 | 6. Trust Pages | 0/2 | Not started | - |
