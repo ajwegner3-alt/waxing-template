@@ -35,11 +35,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. A single `client.config.ts` file contains all business info and a change there propagates through metadata and schema helpers
   4. TypeScript interfaces exist for Service, ServiceCategory, Staff, FAQ, ServiceArea, and Testimonial with no compile errors
   5. Button, Badge, SectionWrapper, BookingButton, PhoneLink, and SchemaScript primitives render correctly with the brand tokens applied
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: Project scaffold, globals.css @theme tokens, font setup, and client.config.ts
-- [ ] 01-02: TypeScript interfaces (lib/types.ts), schema/metadata helpers, and UI primitives
+- [ ] 01-01-PLAN.md — Project scaffold, globals.css @theme tokens, font setup, and client.config.ts
+- [ ] 01-02-PLAN.md — TypeScript interfaces (lib/types.ts), schema/metadata helpers, and UI primitives
 
 ### Phase 2: Layout Shell
 **Goal**: Header, footer, mobile nav, sticky booking bar, and breadcrumb shell are present on every route so pages can be previewed as real pages from the start.
