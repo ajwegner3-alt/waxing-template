@@ -5,7 +5,7 @@
 See: .planning/PROJECT.md (updated 2026-03-28)
 
 **Core value:** First-time waxing clients must feel safe enough to book — every design decision serves this emotional goal.
-**Current focus:** Phase 3 complete — Phase 4 next
+**Current focus:** Phase 4 complete — Phase 5 next
 
 ## Current Position
 

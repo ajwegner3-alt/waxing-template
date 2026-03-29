@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation** - Design tokens, TypeScript types, UI primitives, and client config ✓
 - [x] **Phase 2: Layout Shell** - Header, footer, mobile nav, sticky booking bar ✓
 - [x] **Phase 3: Data Layer** - Service catalog, FAQs, staff, testimonials, service areas ✓
-- [ ] **Phase 4: Homepage** - Full homepage with first-timer pathway and trust signals
+- [x] **Phase 4: Homepage** - Full homepage with first-timer pathway and trust signals ✓
 - [ ] **Phase 5: Service Pages** - Service menu and individual service detail pages
 - [ ] **Phase 6: Trust Pages** - About page and FAQ page
 - [ ] **Phase 7: Booking Flow** - 4-step front-end booking UI
@@ -86,8 +86,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — HomepageHero, TrustBar, WhatToExpect, FirstTimerSpotlight (top-of-page conversion funnel)
-- [ ] 04-02-PLAN.md — ServicesPreview, TestimonialsGrid, EstheticianIntro, FinalCTA, barrel export, page.tsx composer
+- [x] 04-01-PLAN.md — HomepageHero, TrustBar, WhatToExpect, FirstTimerSpotlight (top-of-page conversion funnel)
+- [x] 04-02-PLAN.md — ServicesPreview, TestimonialsGrid, EstheticianIntro, FinalCTA, barrel export, page.tsx composer
 
 ### Phase 5: Service Pages
 **Goal**: Prospective clients can browse services by category, see transparent pricing with descriptions, and drill into individual service pages that address prep, aftercare, and sensitivity — the highest-intent conversion pages on the site.
@@ -193,7 +193,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 1. Foundation | 2/2 | Complete ✓ | 2026-03-28 |
 | 2. Layout Shell | 2/2 | Complete ✓ | 2026-03-29 |
 | 3. Data Layer | 2/2 | Complete ✓ | 2026-03-29 |
-| 4. Homepage | 0/2 | Not started | - |
+| 4. Homepage | 2/2 | Complete ✓ | 2026-03-29 |
 | 5. Service Pages | 0/2 | Not started | - |
 | 6. Trust Pages | 0/2 | Not started | - |
 | 7. Booking Flow | 0/2 | Not started | - |

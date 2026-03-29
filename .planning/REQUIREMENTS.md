@@ -33,14 +33,14 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Homepage
 
-- [ ] **HOME-01**: Hero section with comfort-first headline, subheadline, primary CTA (Book Now), and secondary CTA (First-Timer Guide)
-- [ ] **HOME-02**: First-Timer Package spotlight section with benefits, pricing, and dedicated CTA
-- [ ] **HOME-03**: Services preview grid showing top service categories with icons and "View Menu" link
-- [ ] **HOME-04**: Trust signals bar (Google rating, years in business, number of clients, certifications)
-- [ ] **HOME-05**: Testimonials carousel/section with 3+ featured reviews
-- [ ] **HOME-06**: "What to Expect" preview section walking through first visit steps
-- [ ] **HOME-07**: Esthetician introduction section with photo placeholder and brief story
-- [ ] **HOME-08**: Final CTA section with booking prompt and trust reinforcement
+- [x] **HOME-01**: Hero section with comfort-first headline, subheadline, primary CTA (Book Now), and secondary CTA (First-Timer Guide)
+- [x] **HOME-02**: First-Timer Package spotlight section with benefits, pricing, and dedicated CTA
+- [x] **HOME-03**: Services preview grid showing top service categories with icons and "View Menu" link
+- [x] **HOME-04**: Trust signals bar (Google rating, years in business, number of clients, certifications)
+- [x] **HOME-05**: Testimonials carousel/section with 3+ featured reviews
+- [x] **HOME-06**: "What to Expect" preview section walking through first visit steps
+- [x] **HOME-07**: Esthetician introduction section with photo placeholder and brief story
+- [x] **HOME-08**: Final CTA section with booking prompt and trust reinforcement
 
 ### Service Pages
 
@@ -152,14 +152,14 @@ Deferred to future release. Tracked but not in current roadmap.
 | DATA-03 | Phase 3 | Complete |
 | DATA-04 | Phase 3 | Complete |
 | DATA-05 | Phase 3 | Complete |
-| HOME-01 | Phase 4 | Pending |
-| HOME-02 | Phase 4 | Pending |
-| HOME-03 | Phase 4 | Pending |
-| HOME-04 | Phase 4 | Pending |
-| HOME-05 | Phase 4 | Pending |
-| HOME-06 | Phase 4 | Pending |
-| HOME-07 | Phase 4 | Pending |
-| HOME-08 | Phase 4 | Pending |
+| HOME-01 | Phase 4 | Complete |
+| HOME-02 | Phase 4 | Complete |
+| HOME-03 | Phase 4 | Complete |
+| HOME-04 | Phase 4 | Complete |
+| HOME-05 | Phase 4 | Complete |
+| HOME-06 | Phase 4 | Complete |
+| HOME-07 | Phase 4 | Complete |
+| HOME-08 | Phase 4 | Complete |
 | SVC-01 | Phase 5 | Pending |
 | SVC-02 | Phase 5 | Pending |
 | SVC-03 | Phase 5 | Pending |
