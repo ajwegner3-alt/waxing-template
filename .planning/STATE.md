@@ -9,12 +9,12 @@ See: .planning/PROJECT.md (updated 2026-03-28)
 
 ## Current Position
 
-Phase: 6 of 10 (Trust Pages) — In progress
-Plan: 1 of 2 in current phase — Plan 01 complete
-Status: In progress — ready for 06-02
-Last activity: 2026-03-30 — Completed 06-01-PLAN.md (8 trust components + /about route)
+Phase: 6 of 10 (Trust Pages) — Phase complete
+Plan: 2 of 2 in current phase — Plan 02 complete
+Status: Phase complete — ready for Phase 7
+Last activity: 2026-03-30 — Completed 06-02-PLAN.md (/faq route, 16 FAQs, 7 anxiety categories)
 
-Progress: [█████░░░░░] 50% → [█████▌░░░░] 55%
+Progress: [█████▌░░░░] 55%
 
 ## Performance Metrics
 
@@ -32,7 +32,7 @@ Progress: [█████░░░░░] 50% → [█████▌░░░�
 | 03-data-layer | 2/2 | ~4 min | ~2 min |
 | 04-homepage | 2/2 | 5 min | 2.5 min |
 | 05-service-pages | 2/2 | 5 min | 2.5 min |
-| 06-trust-pages | 1/2 | 5 min | 5 min |
+| 06-trust-pages | 2/2 | 8 min | 4 min |
 
 **Recent Trend:**
 - Last 5 plans: 3 min, 2 min, 3 min, 2 min, 3 min
@@ -92,6 +92,8 @@ Recent decisions affecting current work:
   - Phase 6 plan 01: FAQCategorySection accepts generic FAQ[] + heading/intro/bg — caller controls which FAQs to pass, no category filtering inside component
   - Phase 6 plan 01: TrustCTA trust badges are hardcoded strings derived from clientConfig at render — not a prop array — keeps it simple for stable content
   - Phase 6 plan 01: EstheticianProfile image is a styled placeholder div (not next/image) since /images/staff/maya-chen.jpg does not exist yet
+  - Phase 6 plan 02: FAQ_CATEGORIES defined at page level as a static const — heading/intro is presentation metadata, not content data; faqs.ts stays lean
+  - Phase 6 plan 02: satisfies constraint on FAQ_CATEGORIES keys enforces union type correctness at compile time — catches category key typos
 
 ### Pending Todos
 
@@ -99,10 +101,10 @@ None.
 
 ### Blockers/Concerns
 
-None — 06-01 complete. /about static route builds. FAQCategorySection and TrustCTA ready for reuse in 06-02 (FAQ page).
+None — Phase 6 complete. /about and /faq both statically generated. Phase 7 (booking flow) ready to start.
 
 ## Session Continuity
 
 Last session: 2026-03-30
-Stopped at: Completed 06-01-PLAN.md — 8 trust components + /about route (AboutHero, BrandStory, EstheticianProfile, PhilosophyValues, HygieneProtocols, AboutReviews, FAQCategorySection, TrustCTA)
+Stopped at: Completed 06-02-PLAN.md — /faq route with 16 FAQs across 7 anxiety categories; Phase 6 complete
 Resume file: None
