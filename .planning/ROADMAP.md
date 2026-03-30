@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Layout Shell** - Header, footer, mobile nav, sticky booking bar ✓
 - [x] **Phase 3: Data Layer** - Service catalog, FAQs, staff, testimonials, service areas ✓
 - [x] **Phase 4: Homepage** - Full homepage with first-timer pathway and trust signals ✓
-- [ ] **Phase 5: Service Pages** - Service menu and individual service detail pages
+- [x] **Phase 5: Service Pages** - Service menu and individual service detail pages ✓
 - [ ] **Phase 6: Trust Pages** - About page and FAQ page
 - [ ] **Phase 7: Booking Flow** - 4-step front-end booking UI
 - [ ] **Phase 8: Contact and SEO** - Contact page, sitemap, schema validation, Open Graph
@@ -102,8 +102,8 @@ Plans:
 **Plans**: TBD
 
 Plans:
-- [ ] 05-01: Service menu page with category tabs and pricing grid
-- [ ] 05-02: Individual service page template, dynamic routes, and all 6+ service pages
+- [x] 05-01-PLAN.md — Service menu page with sticky category pills and 14 service cards
+- [x] 05-02-PLAN.md — Service detail components + /services/[slug] dynamic route with 14 static pages
 
 ### Phase 6: Trust Pages
 **Goal**: Visitors who need more reassurance before booking can read the studio's full story, meet the esthetician, and get every first-timer anxiety question answered before committing.
@@ -194,7 +194,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 2. Layout Shell | 2/2 | Complete ✓ | 2026-03-29 |
 | 3. Data Layer | 2/2 | Complete ✓ | 2026-03-29 |
 | 4. Homepage | 2/2 | Complete ✓ | 2026-03-29 |
-| 5. Service Pages | 0/2 | Not started | - |
+| 5. Service Pages | 2/2 | Complete ✓ | 2026-03-30 |
 | 6. Trust Pages | 0/2 | Not started | - |
 | 7. Booking Flow | 0/2 | Not started | - |
 | 8. Contact and SEO | 0/2 | Not started | - |

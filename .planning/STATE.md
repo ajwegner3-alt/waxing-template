@@ -5,7 +5,7 @@
 See: .planning/PROJECT.md (updated 2026-03-28)
 
 **Core value:** First-time waxing clients must feel safe enough to book — every design decision serves this emotional goal.
-**Current focus:** Phase 5 in progress — Plan 01 complete
+**Current focus:** Phase 5 complete — Phase 6 next
 
 ## Current Position
 
@@ -19,7 +19,7 @@ Progress: [█████░░░░░] 50%
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7
+- Total plans completed: 8
 - Average duration: 4.0 min
 - Total execution time: 0.33 hours
 

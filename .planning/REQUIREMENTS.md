@@ -44,12 +44,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Service Pages
 
-- [ ] **SVC-01**: Service menu page with full pricing grid, category tabs/filters, duration, and descriptions
-- [ ] **SVC-02**: Individual service pages for Brazilian wax, bikini wax, eyebrow wax, full leg wax, underarm wax, and facial wax (6 minimum)
-- [ ] **SVC-03**: Each service page includes: description, pricing, duration, prep instructions, aftercare tips, FAQ, and CTA
-- [ ] **SVC-04**: Sensitivity badges on applicable services (gentle formula, sensitive-skin friendly, first-timer recommended)
-- [ ] **SVC-05**: Ingredient transparency section on service pages (natural honey-based formula, what's NOT used)
-- [ ] **SVC-06**: Related services component linking to other relevant service pages
+- [x] **SVC-01**: Service menu page with full pricing grid, category tabs/filters, duration, and descriptions
+- [x] **SVC-02**: Individual service pages for Brazilian wax, bikini wax, eyebrow wax, full leg wax, underarm wax, and facial wax (6 minimum)
+- [x] **SVC-03**: Each service page includes: description, pricing, duration, prep instructions, aftercare tips, FAQ, and CTA
+- [x] **SVC-04**: Sensitivity badges on applicable services (gentle formula, sensitive-skin friendly, first-timer recommended)
+- [x] **SVC-05**: Ingredient transparency section on service pages (natural honey-based formula, what's NOT used)
+- [x] **SVC-06**: Related services component linking to other relevant service pages
 
 ### Booking Flow
 
@@ -160,12 +160,12 @@ Deferred to future release. Tracked but not in current roadmap.
 | HOME-06 | Phase 4 | Complete |
 | HOME-07 | Phase 4 | Complete |
 | HOME-08 | Phase 4 | Complete |
-| SVC-01 | Phase 5 | Pending |
-| SVC-02 | Phase 5 | Pending |
-| SVC-03 | Phase 5 | Pending |
-| SVC-04 | Phase 5 | Pending |
-| SVC-05 | Phase 5 | Pending |
-| SVC-06 | Phase 5 | Pending |
+| SVC-01 | Phase 5 | Complete |
+| SVC-02 | Phase 5 | Complete |
+| SVC-03 | Phase 5 | Complete |
+| SVC-04 | Phase 5 | Complete |
+| SVC-05 | Phase 5 | Complete |
+| SVC-06 | Phase 5 | Complete |
 | TRUST-01 | Phase 6 | Pending |
 | TRUST-02 | Phase 6 | Pending |
 | TRUST-04 | Phase 6 | Pending |
