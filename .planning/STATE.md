@@ -9,12 +9,12 @@ See: .planning/PROJECT.md (updated 2026-03-28)
 
 ## Current Position
 
-Phase: 5 of 10 (Service Pages) — In progress
-Plan: 1 of 2 in current phase — Plan 01 complete
-Status: In progress
-Last activity: 2026-03-30 — Completed 05-01-PLAN.md (/services menu page: ServiceCard, CategorySection, CategoryPills, /services route)
+Phase: 5 of 10 (Service Pages) — Complete
+Plan: 2 of 2 in current phase — Plan 02 complete
+Status: Phase complete — ready for Phase 6
+Last activity: 2026-03-30 — Completed 05-02-PLAN.md (14 static service detail pages at /services/[slug])
 
-Progress: [████▌░░░░░] 45%
+Progress: [█████░░░░░] 50%
 
 ## Performance Metrics
 
@@ -31,10 +31,10 @@ Progress: [████▌░░░░░] 45%
 | 02-layout-shell | 2/2 | 5 min | 2.5 min |
 | 03-data-layer | 2/2 | ~4 min | ~2 min |
 | 04-homepage | 2/2 | 5 min | 2.5 min |
-| 05-service-pages | 1/2 | 2 min | 2 min |
+| 05-service-pages | 2/2 | 5 min | 2.5 min |
 
 **Recent Trend:**
-- Last 5 plans: 2 min, 3 min, 2 min, 3 min, 2 min
+- Last 5 plans: 3 min, 2 min, 3 min, 2 min, 3 min
 - Trend: Stable ~2-3 min
 
 *Updated after each plan completion*
@@ -83,6 +83,11 @@ Recent decisions affecting current work:
   - Phase 5 plan 01: Alternating bg computed via index % 2 in page.tsx — CategorySection accepts bg prop, not hardcoded
   - Phase 5 plan 01: Category anchor id format locked as `category-{slug}` — CategoryPills scroll targeting and Plan 02 detail pages must not rename
   - Phase 5 plan 01: services/index.ts barrel grows in Plan 02 (RelatedServices, ServiceDetailHero to be added)
+  - Phase 5 plan 02: dynamicParams = false makes unknown slugs 404 at request time — correct for content-driven site
+  - Phase 5 plan 02: FAQAccordion uses native details/summary — no use client, group-open Tailwind class rotates chevron SVG
+  - Phase 5 plan 02: Testimonial matched at render time via find() on service.name — no data duplication needed
+  - Phase 5 plan 02: Prep uses brand-primary/15 circles, aftercare uses brand-secondary/20 — different colors signal before vs after
+  - Phase 5 plan 02: Anxiety-first layout order locked — hero CTA → What to Expect → Prep → Aftercare → Ingredients → Testimonial → FAQ → Related → CTA
 
 ### Pending Todos
 
@@ -90,10 +95,10 @@ None.
 
 ### Blockers/Concerns
 
-None — Phase 5 Plan 01 complete. /services page renders all 14 services in 4 categories. Ready for Plan 02 (service detail pages at /services/[slug]).
+None — Phase 5 complete. All 14 service detail pages at /services/[slug] render with anxiety-first layout. Ready for Phase 6 (First Visit page).
 
 ## Session Continuity
 
 Last session: 2026-03-30
-Stopped at: Completed 05-01-PLAN.md — /services menu page with ServiceCard, CategorySection, CategoryPills
+Stopped at: Completed 05-02-PLAN.md — 14 static service detail pages with PainLevelBadge, IngredientCallout, FAQAccordion, ServiceTestimonial, RelatedServices
 Resume file: None
