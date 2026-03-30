@@ -99,7 +99,7 @@ Plans:
   3. Each service page shows sensitivity badges, prep instructions, aftercare tips, and an inline FAQ
   4. A natural-ingredients section appears on applicable service pages explaining the honey-based formula and what is NOT used
   5. A "Related Services" component at the bottom of each service page links to at least 2 other relevant services
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
 - [x] 05-01-PLAN.md — Service menu page with sticky category pills and 14 service cards
@@ -115,11 +115,11 @@ Plans:
   3. A hygiene and safety protocols section appears on the site explaining single-use applicators and sanitization practices
   4. Google reviews display with aggregate rating, review count, and at least 3 individual review cards
   5. Trust signals (rating, certifications, hygiene badges) appear within visual proximity of every form and CTA on these pages
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 06-01: About page (brand story, philosophy, esthetician profile)
-- [ ] 06-02: FAQ page with accordion and Contact page with form and map placeholder
+- [ ] 06-01-PLAN.md — Trust components barrel + About page (brand story, esthetician profile, philosophy, hygiene, reviews, CTA)
+- [ ] 06-02-PLAN.md — FAQ page with 7 anxiety category sections and accordion UI
 
 ### Phase 7: Booking Flow
 **Goal**: A prospective client can walk through a 4-step booking UI that feels warm and guided — not clinical — demonstrating the front-end handoff pattern to an external booking system.
