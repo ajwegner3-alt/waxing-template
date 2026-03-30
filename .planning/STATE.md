@@ -9,12 +9,12 @@ See: .planning/PROJECT.md (updated 2026-03-28)
 
 ## Current Position
 
-Phase: 5 of 10 (Service Pages) — Complete
-Plan: 2 of 2 in current phase — Plan 02 complete
-Status: Phase complete — ready for Phase 6
-Last activity: 2026-03-30 — Completed 05-02-PLAN.md (14 static service detail pages at /services/[slug])
+Phase: 6 of 10 (Trust Pages) — In progress
+Plan: 1 of 2 in current phase — Plan 01 complete
+Status: In progress — ready for 06-02
+Last activity: 2026-03-30 — Completed 06-01-PLAN.md (8 trust components + /about route)
 
-Progress: [█████░░░░░] 50%
+Progress: [█████░░░░░] 50% → [█████▌░░░░] 55%
 
 ## Performance Metrics
 
@@ -32,6 +32,7 @@ Progress: [█████░░░░░] 50%
 | 03-data-layer | 2/2 | ~4 min | ~2 min |
 | 04-homepage | 2/2 | 5 min | 2.5 min |
 | 05-service-pages | 2/2 | 5 min | 2.5 min |
+| 06-trust-pages | 1/2 | 5 min | 5 min |
 
 **Recent Trend:**
 - Last 5 plans: 3 min, 2 min, 3 min, 2 min, 3 min
@@ -88,6 +89,9 @@ Recent decisions affecting current work:
   - Phase 5 plan 02: Testimonial matched at render time via find() on service.name — no data duplication needed
   - Phase 5 plan 02: Prep uses brand-primary/15 circles, aftercare uses brand-secondary/20 — different colors signal before vs after
   - Phase 5 plan 02: Anxiety-first layout order locked — hero CTA → What to Expect → Prep → Aftercare → Ingredients → Testimonial → FAQ → Related → CTA
+  - Phase 6 plan 01: FAQCategorySection accepts generic FAQ[] + heading/intro/bg — caller controls which FAQs to pass, no category filtering inside component
+  - Phase 6 plan 01: TrustCTA trust badges are hardcoded strings derived from clientConfig at render — not a prop array — keeps it simple for stable content
+  - Phase 6 plan 01: EstheticianProfile image is a styled placeholder div (not next/image) since /images/staff/maya-chen.jpg does not exist yet
 
 ### Pending Todos
 
@@ -95,10 +99,10 @@ None.
 
 ### Blockers/Concerns
 
-None — Phase 5 complete. All 14 service detail pages at /services/[slug] render with anxiety-first layout. Ready for Phase 6 (First Visit page).
+None — 06-01 complete. /about static route builds. FAQCategorySection and TrustCTA ready for reuse in 06-02 (FAQ page).
 
 ## Session Continuity
 
 Last session: 2026-03-30
-Stopped at: Completed 05-02-PLAN.md — 14 static service detail pages with PainLevelBadge, IngredientCallout, FAQAccordion, ServiceTestimonial, RelatedServices
+Stopped at: Completed 06-01-PLAN.md — 8 trust components + /about route (AboutHero, BrandStory, EstheticianProfile, PhilosophyValues, HygieneProtocols, AboutReviews, FAQCategorySection, TrustCTA)
 Resume file: None
