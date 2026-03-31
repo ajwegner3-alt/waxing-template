@@ -62,12 +62,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Trust & Content
 
-- [ ] **TRUST-01**: About page with brand story (comfort-first philosophy), natural ingredients commitment, and team introduction
-- [ ] **TRUST-02**: FAQ page with 15+ questions organized by category with accordion UI
+- [x] **TRUST-01**: About page with brand story (comfort-first philosophy), natural ingredients commitment, and team introduction
+- [x] **TRUST-02**: FAQ page with 15+ questions organized by category with accordion UI
 - [ ] **TRUST-03**: Contact page with 3-field form (name, phone, message), map placeholder, hours, address, and phone
-- [ ] **TRUST-04**: Google reviews display component with aggregate rating, review count, and 3+ individual reviews
-- [ ] **TRUST-05**: Hygiene and safety protocols section (single-use applicators, no double-dipping, sanitization practices)
-- [ ] **TRUST-06**: Trust signals placed adjacent to every CTA and booking entry point (not isolated in own section)
+- [x] **TRUST-04**: Google reviews display component with aggregate rating, review count, and 3+ individual reviews
+- [x] **TRUST-05**: Hygiene and safety protocols section (single-use applicators, no double-dipping, sanitization practices)
+- [x] **TRUST-06**: Trust signals placed adjacent to every CTA and booking entry point (not isolated in own section)
 
 ### SEO
 
@@ -166,11 +166,11 @@ Deferred to future release. Tracked but not in current roadmap.
 | SVC-04 | Phase 5 | Complete |
 | SVC-05 | Phase 5 | Complete |
 | SVC-06 | Phase 5 | Complete |
-| TRUST-01 | Phase 6 | Pending |
-| TRUST-02 | Phase 6 | Pending |
-| TRUST-04 | Phase 6 | Pending |
-| TRUST-05 | Phase 6 | Pending |
-| TRUST-06 | Phase 6 | Pending |
+| TRUST-01 | Phase 6 | Complete |
+| TRUST-02 | Phase 6 | Complete |
+| TRUST-04 | Phase 6 | Complete |
+| TRUST-05 | Phase 6 | Complete |
+| TRUST-06 | Phase 6 | Complete |
 | BOOK-01 | Phase 7 | Pending |
 | BOOK-02 | Phase 7 | Pending |
 | BOOK-03 | Phase 7 | Pending |

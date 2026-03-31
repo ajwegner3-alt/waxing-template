@@ -17,7 +17,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 3: Data Layer** - Service catalog, FAQs, staff, testimonials, service areas ✓
 - [x] **Phase 4: Homepage** - Full homepage with first-timer pathway and trust signals ✓
 - [x] **Phase 5: Service Pages** - Service menu and individual service detail pages ✓
-- [ ] **Phase 6: Trust Pages** - About page and FAQ page
+- [x] **Phase 6: Trust Pages** - About page and FAQ page ✓
 - [ ] **Phase 7: Booking Flow** - 4-step front-end booking UI
 - [ ] **Phase 8: Contact and SEO** - Contact page, sitemap, schema validation, Open Graph
 - [ ] **Phase 9: Blog and Service Areas** - Blog pipeline and Omaha neighborhood pages
@@ -118,8 +118,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 06-01-PLAN.md — Trust components barrel + About page (brand story, esthetician profile, philosophy, hygiene, reviews, CTA)
-- [ ] 06-02-PLAN.md — FAQ page with 7 anxiety category sections and accordion UI
+- [x] 06-01-PLAN.md — Trust components barrel + About page (brand story, esthetician profile, philosophy, hygiene, reviews, CTA)
+- [x] 06-02-PLAN.md — FAQ page with 7 anxiety category sections and accordion UI
 
 ### Phase 7: Booking Flow
 **Goal**: A prospective client can walk through a 4-step booking UI that feels warm and guided — not clinical — demonstrating the front-end handoff pattern to an external booking system.
@@ -195,7 +195,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 3. Data Layer | 2/2 | Complete ✓ | 2026-03-29 |
 | 4. Homepage | 2/2 | Complete ✓ | 2026-03-29 |
 | 5. Service Pages | 2/2 | Complete ✓ | 2026-03-30 |
-| 6. Trust Pages | 0/2 | Not started | - |
+| 6. Trust Pages | 2/2 | Complete ✓ | 2026-03-30 |
 | 7. Booking Flow | 0/2 | Not started | - |
 | 8. Contact and SEO | 0/2 | Not started | - |
 | 9. Blog and Service Areas | 0/2 | Not started | - |

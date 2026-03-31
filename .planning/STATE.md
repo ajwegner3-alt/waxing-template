@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-03-28)
 
 **Core value:** First-time waxing clients must feel safe enough to book — every design decision serves this emotional goal.
-**Current focus:** Phase 5 complete — Phase 6 next
+**Current focus:** Phase 6 complete — Phase 7 next
 
 ## Current Position
 
-Phase: 6 of 10 (Trust Pages) — Phase complete
-Plan: 2 of 2 in current phase — Plan 02 complete
-Status: Phase complete — ready for Phase 7
-Last activity: 2026-03-30 — Completed 06-02-PLAN.md (/faq route, 16 FAQs, 7 anxiety categories)
+Phase: 6 of 10 (Trust Pages) — COMPLETE
+Plan: 2 of 2 in current phase — All plans complete
+Status: Phase complete, verified (10/10 must-haves)
+Last activity: 2026-03-31 — Phase 6 verified, /about + /faq operational
 
-Progress: [█████▌░░░░] 55%
+Progress: [██████░░░░] 60%
 
 ## Performance Metrics
 
