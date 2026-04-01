@@ -18,7 +18,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 4: Homepage** - Full homepage with first-timer pathway and trust signals ✓
 - [x] **Phase 5: Service Pages** - Service menu and individual service detail pages ✓
 - [x] **Phase 6: Trust Pages** - About page and FAQ page ✓
-- [ ] **Phase 7: Booking Flow** - 4-step front-end booking UI
+- [x] **Phase 7: Booking Flow** - 4-step front-end booking UI ✓
 - [ ] **Phase 8: Contact and SEO** - Contact page, sitemap, schema validation, Open Graph
 - [ ] **Phase 9: Blog and Service Areas** - Blog pipeline and Omaha neighborhood pages
 - [ ] **Phase 10: Manual QA** - Live verification, Core Web Vitals, mobile review
@@ -134,8 +134,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 07-01-PLAN.md — BookingFlow state machine, ProgressIndicator, ServiceSelector, EstheticianStep, DateTimePicker
-- [ ] 07-02-PLAN.md — ConfirmationStep with summary/prep/handoff, /book page route
+- [x] 07-01-PLAN.md — BookingFlow state machine, ProgressIndicator, ServiceSelector, EstheticianStep, DateTimePicker
+- [x] 07-02-PLAN.md — ConfirmationStep with summary/prep/handoff, /book page route
 
 ### Phase 8: Contact and SEO
 **Goal**: Every page has complete SEO scaffolding (meta, schema, canonical, Open Graph), the contact page is live, and the site is ready for indexing.
@@ -196,7 +196,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 4. Homepage | 2/2 | Complete ✓ | 2026-03-29 |
 | 5. Service Pages | 2/2 | Complete ✓ | 2026-03-30 |
 | 6. Trust Pages | 2/2 | Complete ✓ | 2026-03-30 |
-| 7. Booking Flow | 0/2 | Not started | - |
+| 7. Booking Flow | 2/2 | Complete ✓ | 2026-03-31 |
 | 8. Contact and SEO | 0/2 | Not started | - |
 | 9. Blog and Service Areas | 0/2 | Not started | - |
 | 10. Manual QA | 0/1 | Not started | - |

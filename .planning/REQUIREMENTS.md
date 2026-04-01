@@ -53,12 +53,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Booking Flow
 
-- [ ] **BOOK-01**: 4-step booking flow UI: service selection > esthetician preference > date/time selection > confirmation
-- [ ] **BOOK-02**: Service selection step pulls from service catalog data with pricing displayed
-- [ ] **BOOK-03**: Date/time step with calendar UI and time slot grid (static/mock data)
-- [ ] **BOOK-04**: Confirmation step with appointment summary, prep reminders, and cancellation policy
-- [ ] **BOOK-05**: Booking flow maintains warm brand aesthetic (not clinical step-form feel)
-- [ ] **BOOK-06**: Progress indicator showing current step in the flow
+- [x] **BOOK-01**: 4-step booking flow UI: service selection > esthetician preference > date/time selection > confirmation
+- [x] **BOOK-02**: Service selection step pulls from service catalog data with pricing displayed
+- [x] **BOOK-03**: Date/time step with calendar UI and time slot grid (static/mock data)
+- [x] **BOOK-04**: Confirmation step with appointment summary, prep reminders, and cancellation policy
+- [x] **BOOK-05**: Booking flow maintains warm brand aesthetic (not clinical step-form feel)
+- [x] **BOOK-06**: Progress indicator showing current step in the flow
 
 ### Trust & Content
 
@@ -171,12 +171,12 @@ Deferred to future release. Tracked but not in current roadmap.
 | TRUST-04 | Phase 6 | Complete |
 | TRUST-05 | Phase 6 | Complete |
 | TRUST-06 | Phase 6 | Complete |
-| BOOK-01 | Phase 7 | Pending |
-| BOOK-02 | Phase 7 | Pending |
-| BOOK-03 | Phase 7 | Pending |
-| BOOK-04 | Phase 7 | Pending |
-| BOOK-05 | Phase 7 | Pending |
-| BOOK-06 | Phase 7 | Pending |
+| BOOK-01 | Phase 7 | Complete |
+| BOOK-02 | Phase 7 | Complete |
+| BOOK-03 | Phase 7 | Complete |
+| BOOK-04 | Phase 7 | Complete |
+| BOOK-05 | Phase 7 | Complete |
+| BOOK-06 | Phase 7 | Complete |
 | TRUST-03 | Phase 8 | Pending |
 | SEO-01 | Phase 8 | Pending |
 | SEO-02 | Phase 8 | Pending |
