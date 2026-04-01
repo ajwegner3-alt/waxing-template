@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-03-28)
 
 **Core value:** First-time waxing clients must feel safe enough to book — every design decision serves this emotional goal.
-**Current focus:** Phase 7 in progress — Plan 01 complete
+**Current focus:** Phase 7 complete — Phase 8 (SEO/Schema) ready to start
 
 ## Current Position
 
-Phase: 7 of 10 (Booking Flow) — In progress
-Plan: 1 of 2 in current phase
-Status: In progress
-Last activity: 2026-04-01 — Completed 07-01-PLAN.md — booking flow core (BookingFlow, ProgressIndicator, ServiceSelector, EstheticianStep, DateTimePicker)
+Phase: 7 of 10 (Booking Flow) — Complete
+Plan: 2 of 2 in current phase
+Status: Phase complete
+Last activity: 2026-04-01 — Completed 07-02-PLAN.md — ConfirmationStep + /book page
 
-Progress: [██████▒░░░] 65% (9/~14 plans complete)
+Progress: [███████░░░] 71% (10/~14 plans complete)
 
 ## Performance Metrics
 
@@ -33,7 +33,7 @@ Progress: [██████▒░░░] 65% (9/~14 plans complete)
 | 04-homepage | 2/2 | 5 min | 2.5 min |
 | 05-service-pages | 2/2 | 5 min | 2.5 min |
 | 06-trust-pages | 2/2 | 8 min | 4 min |
-| 07-booking-flow | 1/2 | 2 min | 2 min |
+| 07-booking-flow | 2/2 | 4 min | 2 min |
 
 **Recent Trend:**
 - Last 5 plans: 2 min, 3 min, 2 min, 3 min, 2 min
@@ -75,6 +75,9 @@ Recent decisions affecting current work:
   - Phase 7 plan 01: buildCalendarGrid called once at module scope as CALENDAR_WEEKS const — not inside render — eliminates SSR/hydration risk
   - Phase 7 plan 01: Booking sub-components inherit client boundary from BookingFlow parent — no "use client" needed in ProgressIndicator, ServiceSelector, EstheticianStep, DateTimePicker
   - Phase 7 plan 01: Explicit (date: string) and (time: string) callback param types required in BookingFlow JSX — TypeScript strict mode won't infer from arrow functions in JSX without annotation
+  - Phase 7 plan 02: ConfirmationStep imported directly in BookingFlow.tsx (not via barrel) — consistent with Plan 01 direct-sibling import pattern to avoid circular deps
+  - Phase 7 plan 02: Date parsing via new Date(year, month-1, day) to avoid UTC timezone shift that new Date("YYYY-MM-DD") triggers — would display previous day in many timezones
+  - Phase 7 plan 02: Cancellation policy as static inline text — $15 fee and 24h notice are universal; can be promoted to clientConfig if operators need customization later
 
   - Phase 4 plan 01: Hero uses -mt-16 lg:-mt-20 to negate layout pt-16/pt-20 for edge-to-edge fill; pt-32 lg:pt-40 on inner content restores header clearance
   - Phase 4 plan 01: Homepage sections are Server Components + FadeUp wrapper pattern — no use client escalation needed for entrance animation
@@ -106,10 +109,10 @@ None.
 
 ### Blockers/Concerns
 
-None — Phase 6 complete. /about and /faq both statically generated. Phase 7 (booking flow) ready to start.
+None — Phase 7 complete. /book statically generates with full 4-step flow. Phase 8 (SEO/Schema) ready to start.
 
 ## Session Continuity
 
 Last session: 2026-04-01
-Stopped at: Completed 07-01-PLAN.md — booking flow core: BookingFlow useReducer state machine + 4 sub-components + barrel export
+Stopped at: Completed 07-02-PLAN.md — ConfirmationStep + /book page (Phase 7 complete)
 Resume file: None
