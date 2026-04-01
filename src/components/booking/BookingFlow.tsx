@@ -7,6 +7,7 @@ import { ProgressIndicator } from "./ProgressIndicator";
 import { ServiceSelector } from "./ServiceSelector";
 import { EstheticianStep } from "./EstheticianStep";
 import { DateTimePicker } from "./DateTimePicker";
+import { ConfirmationStep } from "./ConfirmationStep";
 
 // ---------------------------------------------------------------------------
 // State machine types
@@ -112,11 +113,13 @@ export function BookingFlow({ services, esthetician }: BookingFlowProps) {
             />
           )}
           {state.step === 4 && (
-            <div className="py-8 text-center">
-              <p className="text-brand-dark/60 text-lg">
-                Confirmation step coming in Plan 02.
-              </p>
-            </div>
+            <ConfirmationStep
+              services={services}
+              selectedSlugs={state.selectedServiceSlugs}
+              esthetician={esthetician}
+              date={state.selectedDate!}
+              time={state.selectedTime!}
+            />
           )}
         </motion.div>
       </AnimatePresence>
