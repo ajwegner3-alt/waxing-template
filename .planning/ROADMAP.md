@@ -131,11 +131,11 @@ Plans:
   3. The date/time step displays a calendar and time slot grid (static/mock data)
   4. The confirmation step shows appointment summary, prep reminders, cancellation policy, and frames the external booking redirect warmly
   5. A step progress indicator is visible at all times and the visual aesthetic matches the rest of the site (warm, not clinical)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 07-01: BookingFlow client component — ServiceSelector and DateTimePicker steps
-- [ ] 07-02: ClientInfoForm and ConfirmationScreen steps, progress indicator, /book page
+- [ ] 07-01-PLAN.md — BookingFlow state machine, ProgressIndicator, ServiceSelector, EstheticianStep, DateTimePicker
+- [ ] 07-02-PLAN.md — ConfirmationStep with summary/prep/handoff, /book page route
 
 ### Phase 8: Contact and SEO
 **Goal**: Every page has complete SEO scaffolding (meta, schema, canonical, Open Graph), the contact page is live, and the site is ready for indexing.
