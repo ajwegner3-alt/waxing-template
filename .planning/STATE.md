@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-03-28)
 
 **Core value:** First-time waxing clients must feel safe enough to book — every design decision serves this emotional goal.
-**Current focus:** Phase 6 complete — Phase 7 next
+**Current focus:** Phase 7 in progress — Plan 01 complete
 
 ## Current Position
 
-Phase: 6 of 10 (Trust Pages) — COMPLETE
-Plan: 2 of 2 in current phase — All plans complete
-Status: Phase complete, verified (10/10 must-haves)
-Last activity: 2026-03-31 — Phase 6 verified, /about + /faq operational
+Phase: 7 of 10 (Booking Flow) — In progress
+Plan: 1 of 2 in current phase
+Status: In progress
+Last activity: 2026-04-01 — Completed 07-01-PLAN.md — booking flow core (BookingFlow, ProgressIndicator, ServiceSelector, EstheticianStep, DateTimePicker)
 
-Progress: [██████░░░░] 60%
+Progress: [██████▒░░░] 65% (9/~14 plans complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8
-- Average duration: 4.0 min
-- Total execution time: 0.33 hours
+- Total plans completed: 9
+- Average duration: 3.6 min
+- Total execution time: 0.36 hours
 
 **By Phase:**
 
@@ -33,9 +33,10 @@ Progress: [██████░░░░] 60%
 | 04-homepage | 2/2 | 5 min | 2.5 min |
 | 05-service-pages | 2/2 | 5 min | 2.5 min |
 | 06-trust-pages | 2/2 | 8 min | 4 min |
+| 07-booking-flow | 1/2 | 2 min | 2 min |
 
 **Recent Trend:**
-- Last 5 plans: 3 min, 2 min, 3 min, 2 min, 3 min
+- Last 5 plans: 2 min, 3 min, 2 min, 3 min, 2 min
 - Trend: Stable ~2-3 min
 
 *Updated after each plan completion*
@@ -70,6 +71,10 @@ Recent decisions affecting current work:
 - Phase 3: Service area testimonials set to empty array [] in data file — components filter global testimonials at render time, no data duplication
 - Phase 3: Bellevue service area uses Offutt AFB military angle as primary differentiator — genuinely distinct from suburban Papillion entry
 - Phase 7: Booking flow is front-end only; external handoff is a generic clientConfig.bookingUrl — no Vagaro/Booksy hard-coding
+  - Phase 7 plan 01: BookingFlow imports sub-components directly (not via barrel) to avoid circular dependency
+  - Phase 7 plan 01: buildCalendarGrid called once at module scope as CALENDAR_WEEKS const — not inside render — eliminates SSR/hydration risk
+  - Phase 7 plan 01: Booking sub-components inherit client boundary from BookingFlow parent — no "use client" needed in ProgressIndicator, ServiceSelector, EstheticianStep, DateTimePicker
+  - Phase 7 plan 01: Explicit (date: string) and (time: string) callback param types required in BookingFlow JSX — TypeScript strict mode won't infer from arrow functions in JSX without annotation
 
   - Phase 4 plan 01: Hero uses -mt-16 lg:-mt-20 to negate layout pt-16/pt-20 for edge-to-edge fill; pt-32 lg:pt-40 on inner content restores header clearance
   - Phase 4 plan 01: Homepage sections are Server Components + FadeUp wrapper pattern — no use client escalation needed for entrance animation
@@ -105,6 +110,6 @@ None — Phase 6 complete. /about and /faq both statically generated. Phase 7 (b
 
 ## Session Continuity
 
-Last session: 2026-03-30
-Stopped at: Completed 06-02-PLAN.md — /faq route with 16 FAQs across 7 anxiety categories; Phase 6 complete
+Last session: 2026-04-01
+Stopped at: Completed 07-01-PLAN.md — booking flow core: BookingFlow useReducer state machine + 4 sub-components + barrel export
 Resume file: None
