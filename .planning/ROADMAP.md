@@ -147,11 +147,11 @@ Plans:
   3. JSON-LD schema is present on homepage (LocalBusiness), service pages (Service), FAQ page (FAQPage), and all interior pages (BreadcrumbList)
   4. Open Graph and Twitter meta tags are set on every page
   5. sitemap.xml and robots.txt are generated and accessible at /sitemap.xml and /robots.txt
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 08-01: Contact page, SEO metadata audit across all pages, generateMetadata implementation
-- [ ] 08-02: JSON-LD schema pass, sitemap.ts, robots.ts, canonical URLs, internal linking audit
+- [ ] 08-01-PLAN.md — Contact page (form + info + map placeholder), OG default image, metadata audit
+- [ ] 08-02-PLAN.md — Schema generators (Service, FAQPage), BreadcrumbList injection, sitemap.ts, robots.ts
 
 ### Phase 9: Blog and Service Areas
 **Goal**: The blog infrastructure and Omaha neighborhood pages are live with seed content, giving the template an operational local SEO foundation a real client can extend without code changes.
