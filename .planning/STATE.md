@@ -9,19 +9,19 @@ See: .planning/PROJECT.md (updated 2026-03-28)
 
 ## Current Position
 
-Phase: 7 of 10 (Booking Flow) — COMPLETE
-Plan: 2 of 2 in current phase — All plans complete
-Status: Phase complete, verified (10/10 must-haves)
-Last activity: 2026-03-31 — Phase 7 verified, /book 4-step flow operational
+Phase: 8 of 10 (Contact & SEO) — In progress
+Plan: 1 of 2 in current phase — Plan 01 complete
+Status: In progress
+Last activity: 2026-04-02 — Completed 08-01-PLAN.md (/contact page + metadata audit)
 
-Progress: [███████░░░] 70%
+Progress: [████████░░] 75%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 9
+- Total plans completed: 10
 - Average duration: 3.6 min
-- Total execution time: 0.36 hours
+- Total execution time: 0.40 hours
 
 **By Phase:**
 
@@ -34,10 +34,11 @@ Progress: [███████░░░] 70%
 | 05-service-pages | 2/2 | 5 min | 2.5 min |
 | 06-trust-pages | 2/2 | 8 min | 4 min |
 | 07-booking-flow | 2/2 | 4 min | 2 min |
+| 08-contact-and-seo | 1/2 | 4 min | 4 min |
 
 **Recent Trend:**
-- Last 5 plans: 2 min, 3 min, 2 min, 3 min, 2 min
-- Trend: Stable ~2-3 min
+- Last 5 plans: 3 min, 2 min, 3 min, 2 min, 4 min
+- Trend: Stable ~2-4 min
 
 *Updated after each plan completion*
 
@@ -79,6 +80,11 @@ Recent decisions affecting current work:
   - Phase 7 plan 02: Date parsing via new Date(year, month-1, day) to avoid UTC timezone shift that new Date("YYYY-MM-DD") triggers — would display previous day in many timezones
   - Phase 7 plan 02: Cancellation policy as static inline text — $15 fee and 24h notice are universal; can be promoted to clientConfig if operators need customization later
 
+  - Phase 8 plan 01: DAY_LABELS const maps hours object keys to display labels in correct weekday order — Object.entries order matches insertion order in client.config.ts
+  - Phase 8 plan 01: Map placeholder is a styled div (not iframe embed) — no API key needed, links to google.com/maps/search with encoded address
+  - Phase 8 plan 01: sharp used to generate og-default.jpg (already in devDependencies via Next.js) — no new dependency added
+  - Phase 8 plan 01: /services title shortened from 61→47 chars (removed city suffix); /about description trimmed from 156→150 chars
+
   - Phase 4 plan 01: Hero uses -mt-16 lg:-mt-20 to negate layout pt-16/pt-20 for edge-to-edge fill; pt-32 lg:pt-40 on inner content restores header clearance
   - Phase 4 plan 01: Homepage sections are Server Components + FadeUp wrapper pattern — no use client escalation needed for entrance animation
   - Phase 4 plan 01: Service.price is nullable — use ?? fallback in components; never rely on price being non-null without a guard
@@ -109,10 +115,10 @@ None.
 
 ### Blockers/Concerns
 
-None — Phase 7 complete. /book statically generates with full 4-step flow. Phase 8 (SEO/Schema) ready to start.
+None — 08-01 complete. /contact statically generated, all metadata clean. Phase 8 Plan 02 (sitemap, robots.txt, schema) ready to start.
 
 ## Session Continuity
 
-Last session: 2026-04-01
-Stopped at: Completed 07-02-PLAN.md — ConfirmationStep + /book page (Phase 7 complete)
+Last session: 2026-04-02
+Stopped at: Completed 08-01-PLAN.md — /contact page + metadata audit
 Resume file: None
