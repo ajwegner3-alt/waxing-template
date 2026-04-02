@@ -10,9 +10,9 @@ import { CategoryPills, CategorySection } from "@/components/services";
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Waxing Services & Pricing in Omaha | Honey & Bloom Wax Studio",
+  title: "Waxing Services & Pricing | Honey & Bloom Omaha",
   description:
-    "Browse our full menu of face, body, and intimate waxing services with transparent pricing. Gentle honey-based formula, first-timer friendly. Book your appointment today.",
+    "Browse face, body, and intimate waxing with transparent pricing. Gentle honey-based formula, first-timer friendly. Book your appointment today.",
   path: "/services",
 });
 
