@@ -19,7 +19,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 5: Service Pages** - Service menu and individual service detail pages ✓
 - [x] **Phase 6: Trust Pages** - About page and FAQ page ✓
 - [x] **Phase 7: Booking Flow** - 4-step front-end booking UI ✓
-- [ ] **Phase 8: Contact and SEO** - Contact page, sitemap, schema validation, Open Graph
+- [x] **Phase 8: Contact and SEO** - Contact page, sitemap, schema validation, Open Graph ✓
 - [ ] **Phase 9: Blog and Service Areas** - Blog pipeline and Omaha neighborhood pages
 - [ ] **Phase 10: Manual QA** - Live verification, Core Web Vitals, mobile review
 
@@ -150,8 +150,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 08-01-PLAN.md — Contact page (form + info + map placeholder), OG default image, metadata audit
-- [ ] 08-02-PLAN.md — Schema generators (Service, FAQPage), BreadcrumbList injection, sitemap.ts, robots.ts
+- [x] 08-01-PLAN.md — Contact page (form + info + map placeholder), OG default image, metadata audit
+- [x] 08-02-PLAN.md — Schema generators (Service, FAQPage), BreadcrumbList injection, sitemap.ts, robots.ts
 
 ### Phase 9: Blog and Service Areas
 **Goal**: The blog infrastructure and Omaha neighborhood pages are live with seed content, giving the template an operational local SEO foundation a real client can extend without code changes.
@@ -197,6 +197,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 5. Service Pages | 2/2 | Complete ✓ | 2026-03-30 |
 | 6. Trust Pages | 2/2 | Complete ✓ | 2026-03-30 |
 | 7. Booking Flow | 2/2 | Complete ✓ | 2026-03-31 |
-| 8. Contact and SEO | 0/2 | Not started | - |
+| 8. Contact and SEO | 2/2 | Complete ✓ | 2026-04-01 |
 | 9. Blog and Service Areas | 0/2 | Not started | - |
 | 10. Manual QA | 0/1 | Not started | - |

@@ -64,20 +64,20 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **TRUST-01**: About page with brand story (comfort-first philosophy), natural ingredients commitment, and team introduction
 - [x] **TRUST-02**: FAQ page with 15+ questions organized by category with accordion UI
-- [ ] **TRUST-03**: Contact page with 3-field form (name, phone, message), map placeholder, hours, address, and phone
+- [x] **TRUST-03**: Contact page with 3-field form (name, phone, message), map placeholder, hours, address, and phone
 - [x] **TRUST-04**: Google reviews display component with aggregate rating, review count, and 3+ individual reviews
 - [x] **TRUST-05**: Hygiene and safety protocols section (single-use applicators, no double-dipping, sanitization practices)
 - [x] **TRUST-06**: Trust signals placed adjacent to every CTA and booking entry point (not isolated in own section)
 
 ### SEO
 
-- [ ] **SEO-01**: Unique title tags, meta descriptions, and H1 on every page following "[Service] in [City] | [Company]" format
-- [ ] **SEO-02**: JSON-LD schema markup: LocalBusiness on homepage, Service on service pages, FAQPage on FAQ, BreadcrumbList on all interior pages
-- [ ] **SEO-03**: Open Graph and Twitter meta tags on every page
-- [ ] **SEO-04**: Canonical URLs on all pages
-- [ ] **SEO-05**: Sitemap.xml and robots.txt configured for Vercel
+- [x] **SEO-01**: Unique title tags, meta descriptions, and H1 on every page following "[Service] in [City] | [Company]" format
+- [x] **SEO-02**: JSON-LD schema markup: LocalBusiness on homepage, Service on service pages, FAQPage on FAQ, BreadcrumbList on all interior pages
+- [x] **SEO-03**: Open Graph and Twitter meta tags on every page
+- [x] **SEO-04**: Canonical URLs on all pages
+- [x] **SEO-05**: Sitemap.xml and robots.txt configured for Vercel
 - [ ] **SEO-06**: Service area pages for 5+ Omaha neighborhoods with genuinely localized content
-- [ ] **SEO-07**: Internal linking strategy: service pages link to related services + service areas, FAQ links to relevant service pages
+- [x] **SEO-07**: Internal linking strategy: service pages link to related services + service areas, FAQ links to relevant service pages
 
 ### Blog
 
@@ -88,11 +88,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Conversion Optimization
 
-- [ ] **CONV-01**: Click-to-call phone number in header, sticky on mobile, using tel: links with 48x48px minimum tap target
-- [ ] **CONV-02**: CTA placement above the fold on every page, repeated after key content sections
-- [ ] **CONV-03**: Social proof (reviews, trust badges) within visual proximity of every form and CTA
-- [ ] **CONV-04**: Forms limited to 3 fields maximum (name, phone, message)
-- [ ] **CONV-05**: Page speed optimized: Next.js Image component, font preloading, minimal JS bundles
+- [x] **CONV-01**: Click-to-call phone number in header, sticky on mobile, using tel: links with 48x48px minimum tap target
+- [x] **CONV-02**: CTA placement above the fold on every page, repeated after key content sections
+- [x] **CONV-03**: Social proof (reviews, trust badges) within visual proximity of every form and CTA
+- [x] **CONV-04**: Forms limited to 3 fields maximum (name, phone, message)
+- [x] **CONV-05**: Page speed optimized: Next.js Image component, font preloading, minimal JS bundles
 
 ## v2 Requirements
 
@@ -177,18 +177,18 @@ Deferred to future release. Tracked but not in current roadmap.
 | BOOK-04 | Phase 7 | Complete |
 | BOOK-05 | Phase 7 | Complete |
 | BOOK-06 | Phase 7 | Complete |
-| TRUST-03 | Phase 8 | Pending |
-| SEO-01 | Phase 8 | Pending |
-| SEO-02 | Phase 8 | Pending |
-| SEO-03 | Phase 8 | Pending |
-| SEO-04 | Phase 8 | Pending |
-| SEO-05 | Phase 8 | Pending |
-| SEO-07 | Phase 8 | Pending |
-| CONV-01 | Phase 8 | Pending |
-| CONV-02 | Phase 8 | Pending |
-| CONV-03 | Phase 8 | Pending |
-| CONV-04 | Phase 8 | Pending |
-| CONV-05 | Phase 8 | Pending |
+| TRUST-03 | Phase 8 | Complete |
+| SEO-01 | Phase 8 | Complete |
+| SEO-02 | Phase 8 | Complete |
+| SEO-03 | Phase 8 | Complete |
+| SEO-04 | Phase 8 | Complete |
+| SEO-05 | Phase 8 | Complete |
+| SEO-07 | Phase 8 | Complete |
+| CONV-01 | Phase 8 | Complete |
+| CONV-02 | Phase 8 | Complete |
+| CONV-03 | Phase 8 | Complete |
+| CONV-04 | Phase 8 | Complete |
+| CONV-05 | Phase 8 | Complete |
 | SEO-06 | Phase 9 | Pending |
 | BLOG-01 | Phase 9 | Pending |
 | BLOG-02 | Phase 9 | Pending |
