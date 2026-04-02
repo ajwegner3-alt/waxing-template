@@ -8,7 +8,7 @@
  * personal care businesses, not medical practices.
  */
 
-import type { WaxingClientConfig, Service, FAQ } from "@/lib/types";
+import type { WaxingClientConfig, Service, FAQ, BlogPost, ServiceArea } from "@/lib/types";
 
 /**
  * Generates a LocalBusiness/BeautyBusiness JSON-LD schema for the homepage.
@@ -129,6 +129,59 @@ export function generateFAQPageSchema(
         text: faq.answer,
       },
     })),
+  };
+}
+
+/**
+ * Generates a BlogPosting JSON-LD schema for individual blog post pages.
+ * Inject via <SchemaScript schema={generateBlogPostSchema(post, clientConfig)} />
+ *
+ * TODO: Plan 02 replaces with full implementation (author, datePublished, etc.)
+ */
+export function generateBlogPostSchema(
+  post: BlogPost,
+  config: WaxingClientConfig
+): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.description,
+    url: `${config.siteUrl}/blog/${post.slug}`,
+    author: {
+      "@type": "Person",
+      name: post.author,
+    },
+    publisher: {
+      "@type": ["LocalBusiness", "BeautyBusiness"],
+      name: config.name,
+      url: config.siteUrl,
+    },
+    datePublished: post.date,
+    image: post.image.startsWith("http") ? post.image : `${config.siteUrl}${post.image}`,
+  };
+}
+
+/**
+ * Generates a LocalBusiness/BeautyBusiness JSON-LD schema for service area pages.
+ * Inject via <SchemaScript schema={generateServiceAreaSchema(area, clientConfig)} />
+ *
+ * TODO: Plan 02 replaces with full implementation (areaServed, address, etc.)
+ */
+export function generateServiceAreaSchema(
+  area: ServiceArea,
+  config: WaxingClientConfig
+): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "BeautyBusiness"],
+    name: config.name,
+    url: `${config.siteUrl}/service-areas/${area.slug}`,
+    areaServed: {
+      "@type": "City",
+      name: area.city,
+      addressRegion: area.state,
+    },
   };
 }
 
