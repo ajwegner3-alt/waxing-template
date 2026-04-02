@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-03-28)
 
 **Core value:** First-time waxing clients must feel safe enough to book — every design decision serves this emotional goal.
-**Current focus:** Phase 7 complete — Phase 8 next
+**Current focus:** Phase 8 complete — Phase 9 (Performance) next
 
 ## Current Position
 
-Phase: 8 of 10 (Contact & SEO) — In progress
-Plan: 1 of 2 in current phase — Plan 01 complete
-Status: In progress
-Last activity: 2026-04-02 — Completed 08-01-PLAN.md (/contact page + metadata audit)
+Phase: 8 of 10 (Contact & SEO) — Complete
+Plan: 2 of 2 in current phase — Plan 02 complete
+Status: Phase complete
+Last activity: 2026-04-02 — Completed 08-02-PLAN.md (schema + sitemap + robots.txt)
 
-Progress: [████████░░] 75%
+Progress: [█████████░] 80%
 
 ## Performance Metrics
 
@@ -34,7 +34,7 @@ Progress: [████████░░] 75%
 | 05-service-pages | 2/2 | 5 min | 2.5 min |
 | 06-trust-pages | 2/2 | 8 min | 4 min |
 | 07-booking-flow | 2/2 | 4 min | 2 min |
-| 08-contact-and-seo | 1/2 | 4 min | 4 min |
+| 08-contact-and-seo | 2/2 | 7 min | 3.5 min |
 
 **Recent Trend:**
 - Last 5 plans: 3 min, 2 min, 3 min, 2 min, 4 min
@@ -84,6 +84,9 @@ Recent decisions affecting current work:
   - Phase 8 plan 01: Map placeholder is a styled div (not iframe embed) — no API key needed, links to google.com/maps/search with encoded address
   - Phase 8 plan 01: sharp used to generate og-default.jpg (already in devDependencies via Next.js) — no new dependency added
   - Phase 8 plan 01: /services title shortened from 61→47 chars (removed city suffix); /about description trimmed from 156→150 chars
+  - Phase 8 plan 02: generateServiceSchema uses service.shortDescription (Service type has no .description field)
+  - Phase 8 plan 02: BreadcrumbList schema injected in Breadcrumbs component — auto-applies to every interior page that uses the component
+  - Phase 8 plan 02: sitemap.ts enumerates 14 service slugs via allServices.map() — dynamic, won't drift if services added/removed
 
   - Phase 4 plan 01: Hero uses -mt-16 lg:-mt-20 to negate layout pt-16/pt-20 for edge-to-edge fill; pt-32 lg:pt-40 on inner content restores header clearance
   - Phase 4 plan 01: Homepage sections are Server Components + FadeUp wrapper pattern — no use client escalation needed for entrance animation
@@ -115,10 +118,10 @@ None.
 
 ### Blockers/Concerns
 
-None — 08-01 complete. /contact statically generated, all metadata clean. Phase 8 Plan 02 (sitemap, robots.txt, schema) ready to start.
+None — Phase 8 complete. All schema deployed, sitemap and robots.txt live. Phase 9 (Performance) ready to start.
 
 ## Session Continuity
 
 Last session: 2026-04-02
-Stopped at: Completed 08-01-PLAN.md — /contact page + metadata audit
+Stopped at: Completed 08-02-PLAN.md — schema + sitemap + robots.txt
 Resume file: None
