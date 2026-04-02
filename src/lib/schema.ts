@@ -136,18 +136,23 @@ export function generateFAQPageSchema(
  * Generates a BlogPosting JSON-LD schema for individual blog post pages.
  * Inject via <SchemaScript schema={generateBlogPostSchema(post, clientConfig)} />
  *
- * TODO: Plan 02 replaces with full implementation (author, datePublished, etc.)
+ * Full implementation: headline, description, author, publisher, dates,
+ * image, url, and mainEntityOfPage.
  */
 export function generateBlogPostSchema(
   post: BlogPost,
   config: WaxingClientConfig
 ): Record<string, unknown> {
+  const url = `${config.siteUrl}/blog/${post.slug}`;
+  const imageUrl = post.image.startsWith("http")
+    ? post.image
+    : `${config.siteUrl}${post.image}`;
+
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
     description: post.description,
-    url: `${config.siteUrl}/blog/${post.slug}`,
     author: {
       "@type": "Person",
       name: post.author,
@@ -158,7 +163,13 @@ export function generateBlogPostSchema(
       url: config.siteUrl,
     },
     datePublished: post.date,
-    image: post.image.startsWith("http") ? post.image : `${config.siteUrl}${post.image}`,
+    dateModified: post.date,
+    image: imageUrl,
+    url,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
   };
 }
 
@@ -166,7 +177,8 @@ export function generateBlogPostSchema(
  * Generates a LocalBusiness/BeautyBusiness JSON-LD schema for service area pages.
  * Inject via <SchemaScript schema={generateServiceAreaSchema(area, clientConfig)} />
  *
- * TODO: Plan 02 replaces with full implementation (areaServed, address, etc.)
+ * Full implementation: business identity, areaServed City with containedInPlace,
+ * telephone, and full PostalAddress from config.
  */
 export function generateServiceAreaSchema(
   area: ServiceArea,
@@ -176,11 +188,23 @@ export function generateServiceAreaSchema(
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "BeautyBusiness"],
     name: config.name,
-    url: `${config.siteUrl}/service-areas/${area.slug}`,
+    url: config.siteUrl,
+    telephone: config.phone,
     areaServed: {
       "@type": "City",
-      name: area.city,
-      addressRegion: area.state,
+      name: area.schema.areaServed,
+      containedInPlace: {
+        "@type": "AdministrativeArea",
+        name: area.county,
+      },
+    },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: config.address.street,
+      addressLocality: config.address.city,
+      addressRegion: config.address.state,
+      postalCode: config.address.zip,
+      addressCountry: "US",
     },
   };
 }
