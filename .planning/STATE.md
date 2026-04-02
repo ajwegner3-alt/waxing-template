@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-03-28)
 
 **Core value:** First-time waxing clients must feel safe enough to book — every design decision serves this emotional goal.
-**Current focus:** Phase 8 complete — Phase 9 next
+**Current focus:** Phase 9 complete — Phase 10 (Manual QA) next
 
 ## Current Position
 
-Phase: 9 of 10 (Blog & Service Areas) — In progress
-Plan: 1 of 2 in current phase — Plan 01 complete
-Status: Plan 01 complete — MDX blog pipeline built and verified
-Last activity: 2026-04-02 — Completed 09-01-PLAN.md (blog infrastructure + 3 seed posts)
+Phase: 9 of 10 (Blog & Service Areas) — Phase complete
+Plan: 2 of 2 in current phase — Plan 02 complete
+Status: Phase 9 complete — blog pipeline + service area pages + schema + sitemap all built
+Last activity: 2026-04-02 — Completed 09-02-PLAN.md (service areas, schema generators, sitemap)
 
-Progress: [█████████░] 85%
+Progress: [█████████░] 90%
 
 ## Performance Metrics
 
@@ -35,9 +35,10 @@ Progress: [█████████░] 85%
 | 06-trust-pages | 2/2 | 8 min | 4 min |
 | 07-booking-flow | 2/2 | 4 min | 2 min |
 | 08-contact-and-seo | 2/2 | 7 min | 3.5 min |
+| 09-blog-and-service-areas | 2/2 | ~8 min | ~4 min |
 
 **Recent Trend:**
-- Last 5 plans: 3 min, 2 min, 3 min, 2 min, 4 min
+- Last 5 plans: 2 min, 3 min, 2 min, 4 min, 4 min
 - Trend: Stable ~2-4 min
 
 *Updated after each plan completion*
@@ -92,6 +93,11 @@ Recent decisions affecting current work:
   - Phase 9 plan 01: Custom src/types/mdx.d.ts required — @types/mdx doesn't declare named exports; `export const metadata: any` enables TypeScript to accept MDX named exports
   - Phase 9 plan 01: readingTime stored as BlogPost extension field (BlogPost & { readingTime: number }) in MDX metadata — not added to BlogPost interface to keep type lean
 
+  - Phase 9 plan 02: SectionWrapper has no "cream" bg variant — plan spec used wrong name; "light" is the cream color (#FAF3EF) and the correct variant
+  - Phase 9 plan 02: testimonials.ts uses "Omaha, NE" for all locations — Papillion/Bellevue area pages show no testimonials section (section omitted when empty, no broken states)
+  - Phase 9 plan 02: CoverageArea uses Set<slug> lookup to determine which nearbyArea names get links vs plain text — prevents dead links for non-page areas like "Benson", "Downtown Omaha"
+  - Phase 9 plan 02: sitemap.ts converted to async function — required because getAllPosts() is async; MetadataRoute.Sitemap return type unchanged
+
   - Phase 4 plan 01: Hero uses -mt-16 lg:-mt-20 to negate layout pt-16/pt-20 for edge-to-edge fill; pt-32 lg:pt-40 on inner content restores header clearance
   - Phase 4 plan 01: Homepage sections are Server Components + FadeUp wrapper pattern — no use client escalation needed for entrance animation
   - Phase 4 plan 01: Service.price is nullable — use ?? fallback in components; never rely on price being non-null without a guard
@@ -122,10 +128,10 @@ None.
 
 ### Blockers/Concerns
 
-None — Plan 09-01 complete. Blog pipeline verified in build. Plan 09-02 (service areas) ready to start.
+None — Phase 9 complete. All 20 plans done. Phase 10 (Manual QA) is the final phase.
 
 ## Session Continuity
 
 Last session: 2026-04-02
-Stopped at: Completed 09-01-PLAN.md — MDX blog pipeline + 3 seed posts
+Stopped at: Completed 09-02-PLAN.md — service areas, schema generators, sitemap (31 routes)
 Resume file: None
