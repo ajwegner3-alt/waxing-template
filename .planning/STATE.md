@@ -9,12 +9,12 @@ See: .planning/PROJECT.md (updated 2026-03-28)
 
 ## Current Position
 
-Phase: 8 of 10 (Contact & SEO) — COMPLETE
-Plan: 2 of 2 in current phase — All plans complete
-Status: Phase complete, verified (10/10 must-haves)
-Last activity: 2026-04-02 — Completed 08-02-PLAN.md (schema + sitemap + robots.txt)
+Phase: 9 of 10 (Blog & Service Areas) — In progress
+Plan: 1 of 2 in current phase — Plan 01 complete
+Status: Plan 01 complete — MDX blog pipeline built and verified
+Last activity: 2026-04-02 — Completed 09-01-PLAN.md (blog infrastructure + 3 seed posts)
 
-Progress: [█████████░] 80%
+Progress: [█████████░] 85%
 
 ## Performance Metrics
 
@@ -88,6 +88,10 @@ Recent decisions affecting current work:
   - Phase 8 plan 02: BreadcrumbList schema injected in Breadcrumbs component — auto-applies to every interior page that uses the component
   - Phase 8 plan 02: sitemap.ts enumerates 14 service slugs via allServices.map() — dynamic, won't drift if services added/removed
 
+  - Phase 9 plan 01: Static postRegistry pattern required — Turbopack cannot analyze template literal dynamic imports for MDX; new posts need 3 entries (POST_SLUGS, postModules in blog.ts, postRegistry in [slug]/page.tsx)
+  - Phase 9 plan 01: Custom src/types/mdx.d.ts required — @types/mdx doesn't declare named exports; `export const metadata: any` enables TypeScript to accept MDX named exports
+  - Phase 9 plan 01: readingTime stored as BlogPost extension field (BlogPost & { readingTime: number }) in MDX metadata — not added to BlogPost interface to keep type lean
+
   - Phase 4 plan 01: Hero uses -mt-16 lg:-mt-20 to negate layout pt-16/pt-20 for edge-to-edge fill; pt-32 lg:pt-40 on inner content restores header clearance
   - Phase 4 plan 01: Homepage sections are Server Components + FadeUp wrapper pattern — no use client escalation needed for entrance animation
   - Phase 4 plan 01: Service.price is nullable — use ?? fallback in components; never rely on price being non-null without a guard
@@ -118,10 +122,10 @@ None.
 
 ### Blockers/Concerns
 
-None — Phase 8 complete. All schema deployed, sitemap and robots.txt live. Phase 9 (Performance) ready to start.
+None — Plan 09-01 complete. Blog pipeline verified in build. Plan 09-02 (service areas) ready to start.
 
 ## Session Continuity
 
 Last session: 2026-04-02
-Stopped at: Completed 08-02-PLAN.md — schema + sitemap + robots.txt
+Stopped at: Completed 09-01-PLAN.md — MDX blog pipeline + 3 seed posts
 Resume file: None
