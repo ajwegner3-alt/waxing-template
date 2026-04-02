@@ -10,8 +10,9 @@
 
 import type { Metadata } from "next";
 import { faqs } from "@/content/faqs";
+import { generateFAQPageSchema } from "@/lib/schema";
 import { FAQCategorySection, TrustCTA } from "@/components/trust";
-import { SectionWrapper, FadeUp } from "@/components/ui";
+import { SectionWrapper, FadeUp, SchemaScript } from "@/components/ui";
 import { Breadcrumbs } from "@/components/layout";
 import { generatePageMetadata } from "@/lib/metadata";
 
@@ -75,7 +76,7 @@ const FAQ_CATEGORIES = [
 export default function FAQPage() {
   return (
     <>
-      {/* TODO Phase 8: Add FAQPage schema via SchemaScript */}
+      <SchemaScript schema={generateFAQPageSchema(faqs)} />
 
       {/* Page header */}
       <SectionWrapper bg="light" padding="md">

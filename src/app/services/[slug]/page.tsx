@@ -4,12 +4,14 @@ import { generatePageMetadata } from "@/lib/metadata";
 import { allServices, getServiceBySlug } from "@/content/services";
 import { testimonials } from "@/content/testimonials";
 import { clientConfig } from "@/content/client.config";
+import { generateServiceSchema } from "@/lib/schema";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import {
   SectionWrapper,
   FadeUp,
   BookingLink,
   PhoneLink,
+  SchemaScript,
 } from "@/components/ui";
 import {
   PainLevelBadge,
@@ -76,6 +78,8 @@ export default async function ServiceDetailPage({
 
   return (
     <>
+      <SchemaScript schema={generateServiceSchema(service, clientConfig)} />
+
       {/* ------------------------------------------------------------------ */}
       {/* Hero section                                                         */}
       {/* ------------------------------------------------------------------ */}

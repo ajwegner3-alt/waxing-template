@@ -8,7 +8,7 @@
  * personal care businesses, not medical practices.
  */
 
-import type { WaxingClientConfig } from "@/lib/types";
+import type { WaxingClientConfig, Service, FAQ } from "@/lib/types";
 
 /**
  * Generates a LocalBusiness/BeautyBusiness JSON-LD schema for the homepage.
@@ -77,6 +77,59 @@ function buildOpeningHours(hours: HoursConfig) {
         closes: convertTo24Hour(close),
       };
     });
+}
+
+/**
+ * Generates a Service JSON-LD schema for individual service detail pages.
+ * Inject via <SchemaScript schema={generateServiceSchema(service, clientConfig)} />
+ */
+export function generateServiceSchema(
+  service: Service,
+  config: WaxingClientConfig
+): Record<string, unknown> {
+  const schema: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.name,
+    description: service.shortDescription,
+    url: `${config.siteUrl}/services/${service.slug}`,
+    provider: {
+      "@type": ["LocalBusiness", "BeautyBusiness"],
+      name: config.name,
+      url: config.siteUrl,
+    },
+  };
+
+  if (service.price != null) {
+    schema.offers = {
+      "@type": "Offer",
+      price: service.price,
+      priceCurrency: "USD",
+    };
+  }
+
+  return schema;
+}
+
+/**
+ * Generates a FAQPage JSON-LD schema for the /faq page.
+ * Inject via <SchemaScript schema={generateFAQPageSchema(faqs)} />
+ */
+export function generateFAQPageSchema(
+  faqs: FAQ[]
+): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
 }
 
 function convertTo24Hour(time: string): string {
