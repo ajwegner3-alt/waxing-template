@@ -162,11 +162,11 @@ Plans:
   2. Individual blog post pages render with proper typography, reading time, and related service links
   3. 2-3 seed blog posts exist with localized Omaha angles and internal links to relevant service pages
   4. Service area pages exist for 5+ Omaha neighborhoods with genuinely localized content (not city-name swaps)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 09-01: Blog pipeline (gray-matter, remark, rehype), blog index, post page, 2-3 seed posts
-- [ ] 09-02: Service area template, dynamic routes, 5+ Omaha neighborhood pages
+- [ ] 09-01-PLAN.md — MDX blog pipeline (@next/mdx, typography plugin, blog utility), blog index, post pages, 3 seed posts
+- [ ] 09-02-PLAN.md — Service area components, 6 Omaha neighborhood pages, schema generators, sitemap update
 
 ### Phase 10: Manual QA and Verification
 **Goal**: The complete template is verified on a live Vercel deployment across real devices, Core Web Vitals pass, and every conversion path is confirmed functional before the template is considered production-ready.
