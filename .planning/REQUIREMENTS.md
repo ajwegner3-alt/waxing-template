@@ -76,15 +76,15 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **SEO-03**: Open Graph and Twitter meta tags on every page
 - [x] **SEO-04**: Canonical URLs on all pages
 - [x] **SEO-05**: Sitemap.xml and robots.txt configured for Vercel
-- [ ] **SEO-06**: Service area pages for 5+ Omaha neighborhoods with genuinely localized content
+- [x] **SEO-06**: Service area pages for 5+ Omaha neighborhoods with genuinely localized content
 - [x] **SEO-07**: Internal linking strategy: service pages link to related services + service areas, FAQ links to relevant service pages
 
 ### Blog
 
-- [ ] **BLOG-01**: Blog index page with card layout showing title, excerpt, date, category
-- [ ] **BLOG-02**: Individual blog post page with proper typography, reading time, and related posts
-- [ ] **BLOG-03**: 2-3 seed blog posts (e.g., "How to Prepare for Your First Brazilian Wax", "Waxing vs. Shaving: What's Better for Sensitive Skin", "Aftercare Tips for Smooth Skin")
-- [ ] **BLOG-04**: Blog posts link to relevant service pages for internal SEO
+- [x] **BLOG-01**: Blog index page with card layout showing title, excerpt, date, category
+- [x] **BLOG-02**: Individual blog post page with proper typography, reading time, and related posts
+- [x] **BLOG-03**: 2-3 seed blog posts (e.g., "How to Prepare for Your First Brazilian Wax", "Waxing vs. Shaving: What's Better for Sensitive Skin", "Aftercare Tips for Smooth Skin")
+- [x] **BLOG-04**: Blog posts link to relevant service pages for internal SEO
 
 ### Conversion Optimization
 
@@ -189,11 +189,11 @@ Deferred to future release. Tracked but not in current roadmap.
 | CONV-03 | Phase 8 | Complete |
 | CONV-04 | Phase 8 | Complete |
 | CONV-05 | Phase 8 | Complete |
-| SEO-06 | Phase 9 | Pending |
-| BLOG-01 | Phase 9 | Pending |
-| BLOG-02 | Phase 9 | Pending |
-| BLOG-03 | Phase 9 | Pending |
-| BLOG-04 | Phase 9 | Pending |
+| SEO-06 | Phase 9 | Complete |
+| BLOG-01 | Phase 9 | Complete |
+| BLOG-02 | Phase 9 | Complete |
+| BLOG-03 | Phase 9 | Complete |
+| BLOG-04 | Phase 9 | Complete |
 
 **Coverage:**
 - v1 requirements: 57 total

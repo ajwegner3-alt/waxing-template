@@ -20,7 +20,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 6: Trust Pages** - About page and FAQ page ✓
 - [x] **Phase 7: Booking Flow** - 4-step front-end booking UI ✓
 - [x] **Phase 8: Contact and SEO** - Contact page, sitemap, schema validation, Open Graph ✓
-- [ ] **Phase 9: Blog and Service Areas** - Blog pipeline and Omaha neighborhood pages
+- [x] **Phase 9: Blog and Service Areas** - Blog pipeline and Omaha neighborhood pages ✓
 - [ ] **Phase 10: Manual QA** - Live verification, Core Web Vitals, mobile review
 
 ## Phase Details
@@ -165,8 +165,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 09-01-PLAN.md — MDX blog pipeline (@next/mdx, typography plugin, blog utility), blog index, post pages, 3 seed posts
-- [ ] 09-02-PLAN.md — Service area components, 6 Omaha neighborhood pages, schema generators, sitemap update
+- [x] 09-01-PLAN.md — MDX blog pipeline (@next/mdx, typography plugin, blog utility), blog index, post pages, 3 seed posts
+- [x] 09-02-PLAN.md — Service area components, 6 Omaha neighborhood pages, schema generators, sitemap update
 
 ### Phase 10: Manual QA and Verification
 **Goal**: The complete template is verified on a live Vercel deployment across real devices, Core Web Vitals pass, and every conversion path is confirmed functional before the template is considered production-ready.
@@ -198,5 +198,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 6. Trust Pages | 2/2 | Complete ✓ | 2026-03-30 |
 | 7. Booking Flow | 2/2 | Complete ✓ | 2026-03-31 |
 | 8. Contact and SEO | 2/2 | Complete ✓ | 2026-04-01 |
-| 9. Blog and Service Areas | 0/2 | Not started | - |
+| 9. Blog and Service Areas | 2/2 | Complete ✓ | 2026-04-02 |
 | 10. Manual QA | 0/1 | Not started | - |
