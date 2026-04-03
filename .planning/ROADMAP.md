@@ -178,10 +178,10 @@ Plans:
   3. Core Web Vitals pass (LCP under 2.5s, CLS under 0.1, INP under 200ms) on the Vercel deployment
   4. Google Rich Results Test validates schema on homepage, one service page, and the FAQ page with no errors
   5. All internal links resolve (no 404s), all CTAs route to the correct destination
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 10-01: Live deployment verification checklist (mobile, CTAs, links, schema, Core Web Vitals)
+- [ ] 10-01-PLAN.md — Deploy to Vercel, automated QA (links, Lighthouse, schema, CWV), manual iPhone/desktop walkthrough, FUTURE_DIRECTIONS.md
 
 ## Progress
 
