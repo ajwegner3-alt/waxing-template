@@ -12,6 +12,7 @@
  */
 
 import React from "react";
+import Image from "next/image";
 import { Badge } from "@/components/ui/Badge";
 import { BookingLink } from "@/components/ui/BookingLink";
 import { Button } from "@/components/ui/Button";
@@ -43,14 +44,19 @@ export function HomepageHero() {
         /* negate main's pt-16 lg:pt-20 so hero fills under transparent header */
         "-mt-16 lg:-mt-20",
         "relative min-h-screen flex items-center overflow-hidden",
-        /* gradient placeholder — dark forest green → sage */
-        "bg-gradient-to-br from-[#2C3E2D] via-brand-dark to-brand-secondary/60",
+        "bg-brand-dark",
       ].join(" ")}
     >
-      {/* Replace with: <Image fill src="/images/hero.jpg" className="object-cover" alt="" priority /> */}
+      <Image
+        fill
+        src="/images/hero.jpg"
+        className="object-cover"
+        alt=""
+        priority
+      />
 
-      {/* Overlay to ensure text contrast over any future photo */}
-      <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
+      {/* Overlay to ensure text contrast over the hero photo */}
+      <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
 
       {/* Inner content — pt-32 lg:pt-40 clears the fixed header height */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 lg:pt-40 pb-16 lg:pb-24 w-full">
