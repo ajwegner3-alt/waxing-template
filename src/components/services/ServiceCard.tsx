@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Service } from "@/lib/types";
 import { FadeUp } from "@/components/ui";
 
@@ -22,6 +23,17 @@ export function ServiceCard({ service, delay = 0 }: ServiceCardProps) {
         href={`/services/${service.slug}`}
         className="group block rounded-xl border border-brand-primary/10 bg-white p-5 shadow-sm hover:shadow-md transition-shadow duration-300"
       >
+        {/* Cover image — flush with card edges at top and sides */}
+        <div className="aspect-[16/10] relative overflow-hidden rounded-t-xl -mx-5 -mt-5 mb-4">
+          <Image
+            src={service.coverImage}
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+            alt={service.name}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </div>
+
         {/* Name + Price row */}
         <div className="flex items-start justify-between gap-3 mb-2">
           <h3 className="font-semibold text-brand-dark text-base leading-snug group-hover:text-brand-primary transition-colors duration-200">

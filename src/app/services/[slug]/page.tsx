@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { generatePageMetadata } from "@/lib/metadata";
 import { allServices, getServiceBySlug } from "@/content/services";
@@ -93,12 +94,17 @@ export default async function ServiceDetailPage({
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          {/* Image placeholder */}
+          {/* Hero image */}
           <FadeUp>
-            <div className="aspect-[16/9] lg:aspect-[4/3] w-full rounded-2xl bg-gradient-to-br from-brand-primary/20 via-brand-light to-brand-secondary/20 flex items-center justify-center">
-              <span className="text-brand-dark/30 text-sm">
-                {service.name} photo
-              </span>
+            <div className="aspect-[16/9] lg:aspect-[4/3] w-full relative overflow-hidden rounded-2xl">
+              <Image
+                src={service.coverImage}
+                fill
+                className="object-cover"
+                alt={service.name}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
+              />
             </div>
           </FadeUp>
 
