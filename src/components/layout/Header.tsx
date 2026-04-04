@@ -30,7 +30,7 @@ export function Header() {
         scrolled ? "bg-[#FAF3EF] shadow-sm" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
         <div className="h-16 lg:h-20 flex items-center justify-between lg:grid lg:grid-cols-[1fr_auto_1fr]">
 
           {/* Logo — left-aligned */}
