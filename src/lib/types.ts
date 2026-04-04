@@ -31,6 +31,7 @@ export interface WaxingClientConfig {
   yearsInBusiness: number;
   reviewCount: number;
   reviewAverage: number;
+  licenseNumber: string;
   googleBusinessUrl: string;
 
   // --- Brand Colors ---

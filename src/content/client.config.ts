@@ -46,6 +46,7 @@ export const clientConfig: WaxingClientConfig = {
   yearsInBusiness: 6,
   reviewCount: 247,
   reviewAverage: 4.9,
+  licenseNumber: "NE-ESTH-2020-4871",
   googleBusinessUrl: "https://www.google.com/maps/place/honey-bloom-wax-studio-omaha",
 
   // ---------------------------------------------------------------------------
@@ -60,7 +61,7 @@ export const clientConfig: WaxingClientConfig = {
     secondaryLight: "#96B592",// lighter sage for hover/inactive states
     dark: "#333333",          // charcoal body text (LOCKED by user decision)
     light: "#FAF3EF",         // blush cream — page background
-    gold: "#D4A574",          // same as primary — gold IS the brand here
+    gold: "#FFC30B",          // bright yellow-gold — trust signals, stars, accents
     urgency: "#F8EAE1",       // soft peach-blush for promo banners
   },
 
