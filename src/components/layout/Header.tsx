@@ -7,6 +7,7 @@ import { BookingLink } from "@/components/ui";
 import { useNav } from "./NavContext";
 
 const NAV_LINKS = [
+  { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/first-visit", label: "First Visit" },
   { href: "/about", label: "About" },
