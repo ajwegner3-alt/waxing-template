@@ -54,9 +54,9 @@ export const clientConfig: WaxingClientConfig = {
   // DUAL-CHANGE: These hex values must match @theme tokens in globals.css.
   // ---------------------------------------------------------------------------
   colors: {
-    primary: "#D4A574",       // warm honey gold — primary CTA color
-    primaryDark: "#B8895A",   // deeper gold for hover states
-    primaryLight: "#EDD4B2",  // light gold for subtle backgrounds, ghost states
+    primary: "#FFC30B",       // bright yellow-gold — primary CTA color
+    primaryDark: "#E0AB00",   // deeper gold for hover states
+    primaryLight: "#FFF3CC",  // light gold for subtle backgrounds, ghost states
     secondary: "#7A9E76",     // muted sage green — complementary accent
     secondaryLight: "#96B592",// lighter sage for hover/inactive states
     dark: "#333333",          // charcoal body text (LOCKED by user decision)

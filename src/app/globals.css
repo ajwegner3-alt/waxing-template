@@ -26,9 +26,9 @@
 
 @theme {
   /* --- Brand Colors --- */
-  --color-brand-primary: #D4A574;
-  --color-brand-primary-dark: #B8895A;
-  --color-brand-primary-light: #EDD4B2;
+  --color-brand-primary: #FFC30B;
+  --color-brand-primary-dark: #E0AB00;
+  --color-brand-primary-light: #FFF3CC;
   --color-brand-secondary: #7A9E76;
   --color-brand-secondary-light: #96B592;
   --color-brand-dark: #333333;
@@ -70,7 +70,7 @@ h6 {
    --------------------------------------------------------------------------- */
 
 :focus-visible {
-  outline: 2px solid #D4A574; /* brand-primary */
+  outline: 2px solid #FFC30B; /* brand-primary */
   outline-offset: 2px;
   border-radius: 2px;
 }
@@ -139,14 +139,14 @@ html {
 }
 
 .prose-custom a {
-  color: #D4A574; /* brand-primary */
+  color: #FFC30B; /* brand-primary */
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
 }
 
 .prose-custom a:hover {
-  color: #B8895A; /* brand-primary-dark */
+  color: #E0AB00; /* brand-primary-dark */
 }
 
 .prose-custom ul,
@@ -163,11 +163,11 @@ html {
 }
 
 .prose-custom blockquote {
-  border-left: 3px solid #D4A574; /* brand-primary */
+  border-left: 3px solid #FFC30B; /* brand-primary */
   padding-left: 1.25em;
   margin-left: 0;
   font-style: italic;
-  color: #B8895A; /* brand-primary-dark */
+  color: #E0AB00; /* brand-primary-dark */
 }
 
 .prose-custom strong {
@@ -177,7 +177,7 @@ html {
 
 .prose-custom hr {
   border: none;
-  border-top: 1px solid #EDD4B2; /* brand-primary-light */
+  border-top: 1px solid #FFF3CC; /* brand-primary-light */
   margin: 2em 0;
 }
 
