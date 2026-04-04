@@ -31,9 +31,9 @@ export function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="h-16 lg:h-20 flex items-center justify-between">
+        <div className="h-16 lg:h-20 flex items-center justify-between lg:grid lg:grid-cols-[1fr_auto_1fr]">
 
-          {/* Logo — text only using Fraunces */}
+          {/* Logo — left-aligned */}
           <Link
             href="/"
             className={`font-heading font-semibold text-xl lg:text-2xl transition-colors duration-300 ${
@@ -43,7 +43,7 @@ export function Header() {
             {clientConfig.name}
           </Link>
 
-          {/* Desktop nav — hidden on mobile */}
+          {/* Desktop nav — centered via grid column */}
           <nav
             className="hidden lg:flex items-center gap-6 xl:gap-8"
             aria-label="Main navigation"
@@ -63,8 +63,8 @@ export function Header() {
             ))}
           </nav>
 
-          {/* Desktop Book Now CTA — hidden on mobile */}
-          <div className="hidden lg:block">
+          {/* Desktop Book Now CTA — right-aligned */}
+          <div className="hidden lg:flex justify-end">
             <BookingLink variant="header" />
           </div>
 
