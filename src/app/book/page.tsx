@@ -1,11 +1,20 @@
+/**
+ * /book page — SEO landing page that auto-opens the booking drawer.
+ *
+ * The drawer is the primary booking flow. This page exists so that:
+ * - Direct links to /book work and open the drawer automatically
+ * - Search engines can index the page with booking-focused metadata
+ * - Users who arrive without JS see a fallback "Book Now" button
+ *
+ * The auto-open behavior is handled by BookPageClient (client component).
+ */
+
 import type { Metadata } from "next";
 import { generatePageMetadata } from "@/lib/metadata";
-import { allServices } from "@/content/services";
-import { staff } from "@/content/staff";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { FadeUp } from "@/components/ui/FadeUp";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
-import { BookingFlow } from "@/components/booking";
+import { BookPageClient } from "./BookPageClient";
 
 export const metadata: Metadata = generatePageMetadata({
   title: "Book Your Appointment | Honey & Bloom Wax Studio Omaha",
@@ -32,7 +41,8 @@ export default function BookPage() {
         </FadeUp>
       </SectionWrapper>
 
-      <BookingFlow services={allServices} esthetician={staff[0]} />
+      {/* Auto-opens booking drawer on mount; renders "Book Now" fallback */}
+      <BookPageClient />
     </>
   );
 }

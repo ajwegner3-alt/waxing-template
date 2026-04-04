@@ -18,6 +18,8 @@ import { clientConfig } from "@/content/client.config";
 import { NavProvider, Header, MobileNav, Footer, BookingBar } from "@/components/layout";
 import { SchemaScript } from "@/components/ui";
 import { generateWaxingBusinessSchema } from "@/lib/schema";
+import { BookingDrawerProvider } from "@/components/booking/BookingDrawerContext";
+import { BookingDrawer } from "@/components/booking/BookingDrawer";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -46,15 +48,18 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${fraunces.variable} ${plusJakartaSans.variable}`}>
       <body className="antialiased noise-texture">
-        <NavProvider>
-          <Header />
-          <MobileNav />
-          <main className="pt-16 lg:pt-20 pb-20 lg:pb-0">
-            {children}
-          </main>
-          <Footer />
-          <BookingBar />
-        </NavProvider>
+        <BookingDrawerProvider>
+          <NavProvider>
+            <Header />
+            <MobileNav />
+            <main className="pt-16 lg:pt-20 pb-20 lg:pb-0">
+              {children}
+            </main>
+            <Footer />
+            <BookingBar />
+          </NavProvider>
+          <BookingDrawer />
+        </BookingDrawerProvider>
         <SchemaScript schema={generateWaxingBusinessSchema(clientConfig)} />
       </body>
     </html>

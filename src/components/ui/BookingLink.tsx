@@ -1,11 +1,17 @@
 "use client";
 import React from "react";
-import { clientConfig } from "@/content/client.config";
+import { useBookingDrawer } from "@/components/booking/BookingDrawerContext";
 
 interface BookingLinkProps {
   variant?: "header" | "cta" | "inline";
   className?: string;
   children?: React.ReactNode;
+  /**
+   * When set, renders as an <a> tag linking to this external URL
+   * (e.g. the final "Confirm & Book" handoff in ConfirmationStep).
+   * When omitted, renders as a <button> that opens the booking drawer.
+   */
+  externalHref?: string;
 }
 
 function CalendarIcon({ className }: { className?: string }) {
@@ -35,9 +41,12 @@ const variantClasses: Record<"header" | "cta" | "inline", string> = {
 };
 
 /**
- * BookingLink — renders a booking CTA that links to clientConfig.bookingUrl.
+ * BookingLink — renders a booking CTA.
  *
- * Reads bookingUrl directly from clientConfig — no hardcoded URLs.
+ * Default (no externalHref): <button> that opens the booking drawer via context.
+ * With externalHref: <a> that navigates to the external booking URL (used only
+ * in ConfirmationStep's final handoff button).
+ *
  * Three visual variants: header (compact), cta (large), inline (text link).
  * All variants meet 48x48px minimum tap target for mobile.
  */
@@ -45,20 +54,35 @@ export function BookingLink({
   variant = "header",
   className = "",
   children,
+  externalHref,
 }: BookingLinkProps) {
-  const href = clientConfig.bookingUrl;
+  const { openDrawer } = useBookingDrawer();
   const defaultText = "Book Now";
   const showIcon = variant === "header" || variant === "cta";
-
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`${variantClasses[variant]} ${className}`}
-    >
+  const classes = `${variantClasses[variant]} ${className}`;
+  const content = (
+    <>
       {showIcon && <CalendarIcon className="w-5 h-5 flex-shrink-0" />}
       <span>{children ?? defaultText}</span>
-    </a>
+    </>
+  );
+
+  if (externalHref) {
+    return (
+      <a
+        href={externalHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={classes}
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <button type="button" onClick={openDrawer} className={classes}>
+      {content}
+    </button>
   );
 }
