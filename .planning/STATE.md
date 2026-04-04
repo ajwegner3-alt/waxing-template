@@ -5,14 +5,14 @@
 See: .planning/PROJECT.md (updated 2026-03-28)
 
 **Core value:** First-time waxing clients must feel safe enough to book — every design decision serves this emotional goal.
-**Current focus:** Phase 9 complete — Phase 10 (Manual QA) next
+**Current focus:** Booking drawer feature complete — all "Book Now" CTAs trigger slide-in drawer
 
 ## Current Position
 
 Phase: 9 of 10 (Blog & Service Areas) — Phase complete
 Plan: 2 of 2 in current phase — Plan 02 complete
 Status: Phase 9 complete — blog pipeline + service area pages + schema + sitemap all built
-Last activity: 2026-04-02 — Completed 09-02-PLAN.md (service areas, schema generators, sitemap)
+Last activity: 2026-04-03 — Completed booking drawer feature (BookingDrawerContext, BookingDrawer, refactored BookingFlow)
 
 Progress: [█████████░] 90%
 
@@ -98,6 +98,13 @@ Recent decisions affecting current work:
   - Phase 9 plan 02: CoverageArea uses Set<slug> lookup to determine which nearbyArea names get links vs plain text — prevents dead links for non-page areas like "Benson", "Downtown Omaha"
   - Phase 9 plan 02: sitemap.ts converted to async function — required because getAllPosts() is async; MetadataRoute.Sitemap return type unchanged
 
+  - Booking drawer: BookingDrawerProvider wraps NavProvider (outer); BookingDrawer is sibling of main content at body level
+  - Booking drawer: z-50 for both backdrop and panel — above BookingBar z-40 and MobileNav backdrop z-40
+  - Booking drawer: body scroll lock via document.body.style.overflow in useEffect cleanup
+  - Booking drawer: BookingFlow reordered to 3 steps (Date & Time → Services → Confirm); EstheticianStep removed (single esthetician)
+  - Booking drawer: BookingLink uses useBookingDrawer() + button by default; externalHref prop restores <a> for ConfirmationStep final handoff
+  - Booking drawer: /book page auto-opens drawer via BookPageClient useEffect; SEO metadata preserved in server component
+
   - Phase 4 plan 01: Hero uses -mt-16 lg:-mt-20 to negate layout pt-16/pt-20 for edge-to-edge fill; pt-32 lg:pt-40 on inner content restores header clearance
   - Phase 4 plan 01: Homepage sections are Server Components + FadeUp wrapper pattern — no use client escalation needed for entrance animation
   - Phase 4 plan 01: Service.price is nullable — use ?? fallback in components; never rely on price being non-null without a guard
@@ -132,6 +139,6 @@ None — Phase 9 complete. All 20 plans done. Phase 10 (Manual QA) is the final 
 
 ## Session Continuity
 
-Last session: 2026-04-02
-Stopped at: Completed 09-02-PLAN.md — service areas, schema generators, sitemap (31 routes)
+Last session: 2026-04-03
+Stopped at: Completed booking drawer feature — c5bac65, f4ffc9e pushed to main
 Resume file: None
