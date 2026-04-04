@@ -65,11 +65,14 @@ The website must feel comforting and approachable — not clinical or intimidati
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Fictional brand "Honey & Bloom" | Template needs to look like a real site, not a template. Honey references waxing naturally, Bloom suggests renewal/self-care | -- Pending |
-| Sensitive-skin / first-timer niche | Differentiates from generic waxing sites, creates a clear content angle, matches the comforting aesthetic goal | -- Pending |
-| Verdana Wellness aesthetic direction | User specifically requested this — cream/sage palette, organic typography, warm and botanical | -- Pending |
-| Front-end only booking flow | Template doesn't need working backend, but sales funnel UX must be demonstrable | -- Pending |
-| Omaha, NE as fictional location | Matches NSI's real service area for realistic local SEO demonstration | -- Pending |
+| Fictional brand "Honey & Bloom" | Template needs to look like a real site, not a template. Honey references waxing naturally, Bloom suggests renewal/self-care | Shipped — full brand identity in client.config.ts |
+| Sensitive-skin / first-timer niche | Differentiates from generic waxing sites, creates a clear content angle, matches the comforting aesthetic goal | Shipped — first-timer package, anxiety-category FAQs, comfort-first copy throughout |
+| Verdana Wellness aesthetic direction | User specifically requested this — cream/sage palette, organic typography, warm and botanical | Shipped — Fraunces + Plus Jakarta Sans, cream/sage/forest tokens |
+| Front-end only booking flow | Template doesn't need working backend, but sales funnel UX must be demonstrable | Shipped — 3-step drawer (Date → Services → Confirm), external handoff at end |
+| Omaha, NE as fictional location | Matches NSI's real service area for realistic local SEO demonstration | Shipped — 6 neighborhood service area pages with distinct content |
+| Booking drawer (replaces full-page) | User requested calendar visible immediately on "Book Now" click, entire flow in a drawer | Shipped — slide-in drawer from right, 440px desktop / full mobile |
+| Stock images from Pexels | Placeholder gradients hurt portfolio impression | Shipped — 24 free stock photos (hero, staff, blog, categories, services) |
+| GitHub: ajwegner3-alt/waxing-template | Public repo for portfolio, Vercel auto-deploy from main | Shipped — repo created, Vercel connected |
 
 ---
-*Last updated: 2026-03-28 after initialization*
+*Last updated: 2026-04-04 after Phase 10 progress*

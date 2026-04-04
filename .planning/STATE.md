@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-03-28)
 
 **Core value:** First-time waxing clients must feel safe enough to book — every design decision serves this emotional goal.
-**Current focus:** Booking drawer feature complete — all "Book Now" CTAs trigger slide-in drawer
+**Current focus:** Phase 10 (Manual QA) in progress — deployed to Vercel, booking drawer shipped, stock images added
 
 ## Current Position
 
-Phase: 9 of 10 (Blog & Service Areas) — Phase complete
-Plan: 2 of 2 in current phase — Plan 02 complete
-Status: Phase 9 complete — blog pipeline + service area pages + schema + sitemap all built
-Last activity: 2026-04-03 — Completed booking drawer feature (BookingDrawerContext, BookingDrawer, refactored BookingFlow)
+Phase: 10 of 10 (Manual QA) — In progress
+Plan: 1 of 1 in current phase — Task 1 (deploy) complete, awaiting automated QA + manual walkthrough
+Status: Site deployed to Vercel via GitHub (ajwegner3-alt/waxing-template). Stock images added (24 Pexels photos), hero image wired, booking drawer feature shipped. Automated checks and manual walkthrough still pending.
+Last activity: 2026-04-04 — Stock images, hero swap, booking drawer all deployed to Vercel
 
-Progress: [█████████░] 90%
+Progress: [██████████] 95%
 
 ## Performance Metrics
 
@@ -36,6 +36,7 @@ Progress: [█████████░] 90%
 | 07-booking-flow | 2/2 | 4 min | 2 min |
 | 08-contact-and-seo | 2/2 | 7 min | 3.5 min |
 | 09-blog-and-service-areas | 2/2 | ~8 min | ~4 min |
+| 10-manual-qa | 0/1 | In progress | -- |
 
 **Recent Trend:**
 - Last 5 plans: 2 min, 3 min, 2 min, 4 min, 4 min
@@ -135,10 +136,23 @@ None.
 
 ### Blockers/Concerns
 
-None — Phase 9 complete. All 20 plans done. Phase 10 (Manual QA) is the final phase.
+- Need Vercel .vercel.app URL from Andrew to run automated QA checks (Lighthouse, link checker, schema validation)
+- Service detail pages still use gradient placeholders for hero images — stock images exist at /images/services/ but the [slug]/page.tsx hasn't been wired to use next/image yet
+- EstheticianProfile on About page still uses placeholder div — maya-chen.jpg now exists but component needs wiring
 
 ## Session Continuity
 
-Last session: 2026-04-03
-Stopped at: Completed booking drawer feature — c5bac65, f4ffc9e pushed to main
+Last session: 2026-04-04
+Stopped at: Phase 10 in progress — deployed to Vercel, stock images + booking drawer shipped, awaiting Vercel URL for automated QA
 Resume file: None
+
+## Out-of-Phase Work (during Phase 10)
+
+Work done outside the planned Phase 10 scope:
+- **Stock images**: 24 Pexels photos added (hero, staff, blog, categories, services) — commit 9929531
+- **Hero image wired**: HomepageHero.tsx swapped from gradient to next/image — commit e7f7ec1
+- **Booking drawer**: Full-page /book flow converted to slide-in drawer triggered by all "Book Now" CTAs — commits c5bac65, f4ffc9e
+  - 4 steps → 3 steps (Date & Time → Services → Confirm)
+  - EstheticianStep removed
+  - BookingLink changed from external <a> to <button onClick={openDrawer}>
+  - BookingDrawerContext + BookingDrawer added to layout

@@ -199,4 +199,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 7. Booking Flow | 2/2 | Complete ✓ | 2026-03-31 |
 | 8. Contact and SEO | 2/2 | Complete ✓ | 2026-04-01 |
 | 9. Blog and Service Areas | 2/2 | Complete ✓ | 2026-04-02 |
-| 10. Manual QA | 0/1 | Not started | - |
+| 10. Manual QA | 0/1 | In progress | - |
