@@ -6,11 +6,11 @@ interface ProgressIndicatorProps {
   totalSteps?: number;
 }
 
-const STEP_LABELS = ["Services", "Esthetician", "Date & Time", "Confirm"];
+const STEP_LABELS = ["Date & Time", "Services", "Confirm"];
 
 export function ProgressIndicator({
   currentStep,
-  totalSteps = 4,
+  totalSteps = 3,
 }: ProgressIndicatorProps) {
   return (
     <div

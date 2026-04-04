@@ -1,6 +1,7 @@
 // No "use client" — inherits client boundary from BookingFlow parent
 
 import type { Service, Staff } from "@/lib/types";
+import { clientConfig } from "@/content/client.config";
 import { BookingLink } from "@/components/ui/BookingLink";
 
 interface ConfirmationStepProps {
@@ -214,7 +215,9 @@ export function ConfirmationStep({
           Click below to confirm your appointment on our secure booking system. You&apos;ll be
           able to finalize the details there.
         </p>
-        <BookingLink variant="cta">Confirm &amp; Book</BookingLink>
+        <BookingLink variant="cta" externalHref={clientConfig.bookingUrl}>
+          Confirm &amp; Book
+        </BookingLink>
       </div>
     </div>
   );

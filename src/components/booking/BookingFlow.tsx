@@ -5,7 +5,6 @@ import { AnimatePresence, motion } from "motion/react";
 import type { Service, Staff } from "@/lib/types";
 import { ProgressIndicator } from "./ProgressIndicator";
 import { ServiceSelector } from "./ServiceSelector";
-import { EstheticianStep } from "./EstheticianStep";
 import { DateTimePicker } from "./DateTimePicker";
 import { ConfirmationStep } from "./ConfirmationStep";
 
@@ -13,12 +12,11 @@ import { ConfirmationStep } from "./ConfirmationStep";
 // State machine types
 // ---------------------------------------------------------------------------
 
-type Step = 1 | 2 | 3 | 4;
+type Step = 1 | 2 | 3;
 
 interface BookingState {
   step: Step;
   selectedServiceSlugs: string[];
-  selectedEstheticianSlug: string;
   selectedDate: string | null;
   selectedTime: string | null;
 }
@@ -33,7 +31,7 @@ type BookingAction =
 function bookingReducer(state: BookingState, action: BookingAction): BookingState {
   switch (action.type) {
     case "NEXT_STEP":
-      return { ...state, step: Math.min(4, state.step + 1) as Step };
+      return { ...state, step: Math.min(3, state.step + 1) as Step };
     case "PREV_STEP":
       return { ...state, step: Math.max(1, state.step - 1) as Step };
     case "TOGGLE_SERVICE":
@@ -55,7 +53,6 @@ function bookingReducer(state: BookingState, action: BookingAction): BookingStat
 const INITIAL_STATE: BookingState = {
   step: 1,
   selectedServiceSlugs: [],
-  selectedEstheticianSlug: "maya-chen",
   selectedDate: null,
   selectedTime: null,
 };
@@ -71,19 +68,25 @@ interface BookingFlowProps {
 
 // ---------------------------------------------------------------------------
 // Component
+//
+// Step order:
+//   1 — Date & Time  (user sees calendar immediately on drawer open)
+//   2 — Services     (pick what they need)
+//   3 — Confirm      (review + external handoff)
+//
+// EstheticianStep removed — single esthetician, no choice to make.
 // ---------------------------------------------------------------------------
 
 export function BookingFlow({ services, esthetician }: BookingFlowProps) {
   const [state, dispatch] = useReducer(bookingReducer, INITIAL_STATE);
 
   const canContinue =
-    (state.step === 1 && state.selectedServiceSlugs.length > 0) ||
-    state.step === 2 ||
-    (state.step === 3 && state.selectedDate !== null && state.selectedTime !== null) ||
-    state.step === 4;
+    (state.step === 1 && state.selectedDate !== null && state.selectedTime !== null) ||
+    (state.step === 2 && state.selectedServiceSlugs.length > 0) ||
+    state.step === 3;
 
   return (
-    <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-32">
+    <div className="px-5 py-6 pb-10">
       <ProgressIndicator currentStep={state.step} />
 
       <AnimatePresence mode="wait">
@@ -95,16 +98,6 @@ export function BookingFlow({ services, esthetician }: BookingFlowProps) {
           transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
         >
           {state.step === 1 && (
-            <ServiceSelector
-              services={services}
-              selectedSlugs={state.selectedServiceSlugs}
-              onToggle={(slug) => dispatch({ type: "TOGGLE_SERVICE", slug })}
-            />
-          )}
-          {state.step === 2 && (
-            <EstheticianStep esthetician={esthetician} />
-          )}
-          {state.step === 3 && (
             <DateTimePicker
               selectedDate={state.selectedDate}
               selectedTime={state.selectedTime}
@@ -112,7 +105,14 @@ export function BookingFlow({ services, esthetician }: BookingFlowProps) {
               onSelectTime={(time: string) => dispatch({ type: "SELECT_TIME", time })}
             />
           )}
-          {state.step === 4 && (
+          {state.step === 2 && (
+            <ServiceSelector
+              services={services}
+              selectedSlugs={state.selectedServiceSlugs}
+              onToggle={(slug) => dispatch({ type: "TOGGLE_SERVICE", slug })}
+            />
+          )}
+          {state.step === 3 && (
             <ConfirmationStep
               services={services}
               selectedSlugs={state.selectedServiceSlugs}
@@ -124,8 +124,8 @@ export function BookingFlow({ services, esthetician }: BookingFlowProps) {
         </motion.div>
       </AnimatePresence>
 
-      {/* Step navigation — hidden on step 4 */}
-      {state.step < 4 && (
+      {/* Step navigation — hidden on step 3 (confirmation has its own CTA) */}
+      {state.step < 3 && (
         <div className="flex items-center justify-between mt-8 pt-6 border-t border-brand-dark/10">
           {state.step > 1 ? (
             <button
@@ -142,10 +142,10 @@ export function BookingFlow({ services, esthetician }: BookingFlowProps) {
             disabled={!canContinue}
             className="bg-brand-primary text-white px-8 py-3 rounded-xl font-semibold hover:bg-brand-primary-dark disabled:opacity-40 disabled:cursor-not-allowed transition-colors duration-200"
           >
-            {state.step === 3 ? "Review Booking" : "Continue"}
+            {state.step === 2 ? "Review Booking" : "Continue"}
           </button>
         </div>
       )}
-    </section>
+    </div>
   );
 }
