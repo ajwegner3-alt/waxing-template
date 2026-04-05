@@ -32,9 +32,13 @@ export function FinalCTA() {
   return (
     <SectionWrapper bg="primary" padding="lg">
       <FadeUp>
-        <div className="text-center max-w-2xl mx-auto flex flex-col items-center gap-6">
-          {/* Icon */}
-          <HeartIcon className="w-10 h-10 text-white/60" />
+        <div className="text-center max-w-2xl mx-auto flex flex-col items-center gap-8">
+          {/* Decorative ornament */}
+          <div className="flex items-center gap-3">
+            <span className="block w-12 h-px bg-white/20" />
+            <HeartIcon className="w-8 h-8 text-white/50" />
+            <span className="block w-12 h-px bg-white/20" />
+          </div>
 
           {/* Heading */}
           <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-white leading-tight">
@@ -42,7 +46,7 @@ export function FinalCTA() {
           </h2>
 
           {/* Supporting text */}
-          <p className="text-white/80 text-lg leading-relaxed">
+          <p className="text-white/80 text-lg leading-[1.8]">
             Whether it&apos;s your first time or you&apos;re switching studios,
             you deserve an esthetician who takes your comfort seriously. Book
             your appointment today — no experience necessary.
@@ -65,14 +69,14 @@ export function FinalCTA() {
               reviewCount={clientConfig.reviewCount}
               className="[&>div>svg]:text-white [&>div>svg.text-brand-gold]:text-white"
             />
-            <p className="text-white/65 text-sm">
+            <p className="text-white/60 text-sm">
               Rated {clientConfig.reviewAverage} stars by{" "}
               {clientConfig.reviewCount}+ clients in Omaha
             </p>
           </div>
 
           {/* Fine print */}
-          <p className="text-white/50 text-xs">
+          <p className="text-white/45 text-xs tracking-wide">
             No deposit required &middot; Free cancellation &middot; Private room every appointment
           </p>
         </div>

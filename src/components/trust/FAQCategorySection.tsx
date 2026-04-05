@@ -46,7 +46,7 @@ export function FAQCategorySection({
               {heading}
             </h2>
             {intro && (
-              <p className="text-brand-dark/65 leading-relaxed">{intro}</p>
+              <p className="text-brand-dark/60 leading-[1.7]">{intro}</p>
             )}
           </div>
         </FadeUp>

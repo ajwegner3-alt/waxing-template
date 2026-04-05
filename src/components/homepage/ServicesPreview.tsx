@@ -111,10 +111,13 @@ const iconMap: Record<string, React.ReactNode> = {
 
 export function ServicesPreview() {
   return (
-    <SectionWrapper bg="white" padding="lg">
+    <SectionWrapper bg="white" padding="lg" className="wave-divider-blush">
       {/* Section header */}
       <FadeUp>
         <div className="text-center mb-12 lg:mb-16 max-w-2xl mx-auto">
+          <div className="ornament-divider text-brand-primary mb-6">
+            <span className="text-brand-primary/40 text-xl">&#10045;</span>
+          </div>
           <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-brand-dark mb-4">
             Our Services
           </h2>
@@ -128,7 +131,7 @@ export function ServicesPreview() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {serviceCategories.map((category, i) => (
           <FadeUp key={category.slug} delay={i * 0.1}>
-            <div className="group relative flex flex-col bg-white rounded-2xl border border-brand-primary/12 overflow-hidden gap-4 hover:border-brand-primary/40 hover:shadow-md transition-all duration-200">
+            <div className="group relative flex flex-col bg-white rounded-3xl border border-brand-primary/8 overflow-hidden gap-4 shadow-warm hover:shadow-warm-hover transition-all duration-300">
               {/* Category cover image */}
               {category.coverImage && (
                 <div className="relative w-full aspect-[16/9] overflow-hidden">
@@ -136,7 +139,7 @@ export function ServicesPreview() {
                     src={category.coverImage}
                     alt={category.name}
                     fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                 </div>
@@ -144,7 +147,7 @@ export function ServicesPreview() {
 
               <div className="flex flex-col gap-4 p-6 pt-0">
               {/* Icon */}
-              <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-brand-primary/10 group-hover:bg-brand-primary/18 transition-colors duration-200">
+              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-brand-primary/12 to-brand-primary/5 group-hover:from-brand-primary/20 group-hover:to-brand-primary/10 transition-colors duration-300">
                 {iconMap[category.iconName] ?? iconMap["sparkles"]}
               </div>
 
@@ -161,7 +164,7 @@ export function ServicesPreview() {
               {/* Link */}
               <Link
                 href={`/services/${category.slug}`}
-                className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-primary hover:text-brand-primary-dark transition-colors duration-200 mt-auto"
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-primary hover:text-brand-primary-dark transition-colors duration-200 mt-auto group-hover:gap-2.5"
                 aria-label={`View ${category.name} services`}
               >
                 View Services
@@ -170,7 +173,7 @@ export function ServicesPreview() {
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-hidden="true"
-                  className="w-4 h-4"
+                  className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5"
                 >
                   <path
                     fillRule="evenodd"

@@ -22,7 +22,7 @@ export function AboutHero() {
         />
         <FadeUp className="max-w-2xl">
           {/* Eyebrow */}
-          <p className="text-brand-secondary font-semibold text-sm uppercase tracking-widest mb-3">
+          <p className="text-brand-secondary font-semibold text-sm uppercase tracking-[0.2em] mb-3">
             Our Story
           </p>
 

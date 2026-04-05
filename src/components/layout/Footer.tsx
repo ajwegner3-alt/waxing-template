@@ -11,17 +11,19 @@ import { clientConfig } from "@/content/client.config";
  */
 export function Footer() {
   return (
-    <footer className="bg-[#333333] text-white">
+    <footer className="bg-[#333333] text-white relative">
+      {/* Top decorative border */}
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-brand-primary/40 to-transparent" />
       {/* Main grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
 
           {/* Column 1: Logo + tagline + contact + social */}
           <div>
-            <Link href="/" className="font-heading font-semibold text-xl text-white block mb-3">
+            <Link href="/" className="font-heading font-semibold text-xl text-white block mb-4">
               {clientConfig.name}
             </Link>
-            <p className="text-white/60 text-sm mb-4 leading-relaxed">{clientConfig.tagline}</p>
+            <p className="text-white/55 text-sm mb-5 leading-[1.7]">{clientConfig.tagline}</p>
             {/* Phone */}
             <a
               href={`tel:${clientConfig.phone.replace(/\D/g, "")}`}

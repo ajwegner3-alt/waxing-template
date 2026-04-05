@@ -95,7 +95,7 @@ export default function FirstVisitPage() {
         />
         <FadeUp className="max-w-2xl">
           {/* Eyebrow */}
-          <p className="text-brand-secondary font-semibold text-sm uppercase tracking-widest mb-3">
+          <p className="text-brand-secondary font-semibold text-sm uppercase tracking-[0.2em] mb-3">
             First-Timer Guide
           </p>
 
@@ -154,15 +154,15 @@ export default function FirstVisitPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {prepTips.map((item, i) => (
               <FadeUp key={item.tip} delay={i * 0.08}>
-                <div className="bg-brand-light rounded-2xl p-6 h-full">
+                <div className="bg-white rounded-3xl p-7 h-full shadow-warm border border-brand-primary/8 hover:shadow-warm-lg transition-shadow duration-300">
                   {/* Number badge */}
-                  <div className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-brand-primary text-white text-sm font-bold mb-4">
+                  <div className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-brand-primary text-white text-sm font-bold mb-5 shadow-sm">
                     {i + 1}
                   </div>
                   <h3 className="font-heading text-base font-semibold text-brand-dark mb-2">
                     {item.tip}
                   </h3>
-                  <p className="text-brand-dark/65 text-sm leading-relaxed">
+                  <p className="text-brand-dark/60 text-sm leading-[1.7]">
                     {item.detail}
                   </p>
                 </div>
@@ -172,7 +172,7 @@ export default function FirstVisitPage() {
 
           {/* Side image — hidden on mobile */}
           <FadeUp delay={0.1} className="hidden lg:block">
-            <div className="relative w-64 aspect-[3/4] rounded-2xl overflow-hidden">
+            <div className="relative w-64 aspect-[3/4] rounded-3xl overflow-hidden shadow-warm-lg">
               <Image
                 src="/images/pages/preparation.jpg"
                 alt="Getting ready for your waxing appointment"

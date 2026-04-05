@@ -56,11 +56,11 @@ interface StatItemProps {
 
 function StatItem({ value, label }: StatItemProps) {
   return (
-    <div className="flex flex-col items-center text-center gap-1">
+    <div className="flex flex-col items-center text-center gap-2 px-4 py-3">
       <div className="font-heading text-3xl lg:text-4xl font-semibold text-white">
         {value}
       </div>
-      <div className="text-sm text-white/70 font-medium tracking-wide uppercase">
+      <div className="text-sm text-white/60 font-medium tracking-widest uppercase">
         {label}
       </div>
     </div>
@@ -69,9 +69,9 @@ function StatItem({ value, label }: StatItemProps) {
 
 export function TrustBar() {
   return (
-    <SectionWrapper bg="dark" padding="sm">
+    <SectionWrapper bg="dark" padding="sm" className="wave-divider">
       <FadeUp>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 divide-x divide-white/10 [&>*:first-child]:border-l-0 [&>*:nth-child(3)]:border-l-0 lg:[&>*:nth-child(3)]:border-l">
           {/* Stat 1: Google rating */}
           <StatItem
             value={

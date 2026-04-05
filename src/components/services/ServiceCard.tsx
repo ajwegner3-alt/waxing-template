@@ -21,7 +21,7 @@ export function ServiceCard({ service, delay = 0 }: ServiceCardProps) {
     <FadeUp delay={delay}>
       <Link
         href={`/services/${service.slug}`}
-        className="group block rounded-xl border border-brand-primary/10 bg-white p-5 shadow-sm hover:shadow-md transition-shadow duration-300"
+        className="group block rounded-2xl border border-brand-primary/8 bg-white p-5 shadow-warm hover:shadow-warm-hover transition-all duration-300"
       >
         {/* Cover image — flush with card edges at top and sides */}
         <div className="aspect-[16/10] relative overflow-hidden rounded-t-xl -mx-5 -mt-5 mb-4">

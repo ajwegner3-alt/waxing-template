@@ -122,10 +122,13 @@ export function PhilosophyValues() {
     <SectionWrapper bg="blush" padding="lg">
       {/* Section header */}
       <FadeUp className="text-center mb-12 max-w-2xl mx-auto">
+        <div className="ornament-divider text-brand-primary mb-6">
+          <span className="text-brand-primary/40 text-xl">&#10045;</span>
+        </div>
         <h2 className="font-heading text-2xl lg:text-3xl font-semibold text-brand-dark mb-4">
           What We Believe
         </h2>
-        <p className="text-brand-dark/65 leading-relaxed">
+        <p className="text-brand-dark/60 leading-relaxed">
           These aren&apos;t taglines. They&apos;re the actual principles Maya built this
           studio around — and the standard every appointment is held to.
         </p>
@@ -135,9 +138,9 @@ export function PhilosophyValues() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {values.map((value, i) => (
           <FadeUp key={i} delay={i * 0.1}>
-            <div className="bg-white rounded-2xl p-6 border border-brand-primary/10 shadow-sm h-full flex flex-col gap-4">
+            <div className="bg-white rounded-3xl p-8 border border-brand-primary/8 shadow-warm hover:shadow-warm-lg transition-shadow duration-300 h-full flex flex-col gap-5">
               {/* Icon container */}
-              <div className="w-12 h-12 rounded-xl bg-brand-light flex items-center justify-center flex-shrink-0">
+              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-brand-light to-white flex items-center justify-center flex-shrink-0 border border-brand-primary/8">
                 {value.icon}
               </div>
 
@@ -146,7 +149,7 @@ export function PhilosophyValues() {
                 <h3 className="font-heading font-semibold text-brand-dark text-lg mb-2">
                   {value.title}
                 </h3>
-                <p className="text-brand-dark/65 text-sm leading-relaxed">
+                <p className="text-brand-dark/60 text-sm leading-[1.7]">
                   {value.description}
                 </p>
               </div>

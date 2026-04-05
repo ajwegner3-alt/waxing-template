@@ -23,10 +23,19 @@ const esthetician = staff[0];
 export function EstheticianIntro() {
   return (
     <SectionWrapper bg="white" padding="lg">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      {/* Section ornament */}
+      <FadeUp>
+        <div className="text-center mb-12">
+          <div className="ornament-divider text-brand-primary mb-6">
+            <span className="text-brand-primary/40 text-xl">&#10045;</span>
+          </div>
+        </div>
+      </FadeUp>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* Left: Photo */}
         <FadeUp>
-          <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:mx-0 rounded-2xl overflow-hidden">
+          <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:mx-0 rounded-3xl overflow-hidden shadow-warm-lg">
             {esthetician.headshot ? (
               <Image
                 src={esthetician.headshot}
@@ -51,11 +60,11 @@ export function EstheticianIntro() {
             )}
 
             {/* Experience badge */}
-            <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-3 shadow-md">
+            <div className="absolute bottom-5 right-5 bg-white/92 backdrop-blur-sm rounded-2xl px-5 py-4 shadow-warm-lg">
               <div className="font-heading text-2xl font-bold text-brand-dark leading-none">
                 {esthetician.yearsExperience}+
               </div>
-              <div className="text-xs text-brand-dark/60 font-medium mt-0.5">
+              <div className="text-xs text-brand-dark/55 font-medium mt-1 tracking-wide">
                 Years of Experience
               </div>
             </div>
@@ -66,7 +75,7 @@ export function EstheticianIntro() {
         <FadeUp delay={0.15}>
           <div className="flex flex-col gap-6">
             {/* Eyebrow label */}
-            <div className="text-brand-secondary font-semibold text-sm tracking-wide uppercase">
+            <div className="text-brand-secondary font-semibold text-sm tracking-widest uppercase">
               Meet Your Esthetician
             </div>
 
@@ -80,11 +89,11 @@ export function EstheticianIntro() {
             </div>
 
             {/* Bio paragraphs — show first two for a concise but personal read */}
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-5">
               {esthetician.bio.slice(0, 2).map((paragraph, i) => (
                 <p
                   key={i}
-                  className="text-brand-dark/70 leading-relaxed"
+                  className="text-brand-dark/65 leading-[1.8]"
                 >
                   {paragraph}
                 </p>
@@ -94,14 +103,14 @@ export function EstheticianIntro() {
             {/* Specialties */}
             {esthetician.specialties && esthetician.specialties.length > 0 && (
               <div>
-                <div className="text-xs font-semibold text-brand-dark/50 uppercase tracking-wider mb-2">
+                <div className="text-xs font-semibold text-brand-dark/45 uppercase tracking-widest mb-3">
                   Specialties
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {esthetician.specialties.map((specialty) => (
                     <span
                       key={specialty}
-                      className="text-sm bg-brand-primary/10 text-brand-dark/75 font-medium px-3 py-1 rounded-full"
+                      className="text-sm bg-gradient-to-r from-brand-primary/10 to-brand-primary/5 text-brand-dark/70 font-medium px-4 py-1.5 rounded-full border border-brand-primary/8"
                     >
                       {specialty}
                     </span>
@@ -115,7 +124,7 @@ export function EstheticianIntro() {
               <BookingLink variant="cta" className="w-full sm:w-auto">
                 Book with {esthetician.name.split(" ")[0]}
               </BookingLink>
-              <p className="text-xs text-brand-dark/45 mt-2">
+              <p className="text-xs text-brand-dark/40 mt-2">
                 Accepting new clients &middot; No deposit required
               </p>
             </div>

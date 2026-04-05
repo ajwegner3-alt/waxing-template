@@ -13,15 +13,18 @@ import { FadeUp } from "@/components/ui/FadeUp";
 
 export function BrandStory() {
   return (
-    <SectionWrapper bg="white" padding="md">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+    <SectionWrapper bg="white" padding="lg">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-5xl mx-auto">
         {/* Left: text */}
         <FadeUp>
+          <div className="ornament-divider text-brand-primary mb-8 justify-start">
+            <span className="text-brand-primary/40 text-lg">&#10045;</span>
+          </div>
           <h2 className="font-heading text-2xl lg:text-3xl font-semibold text-brand-dark mb-8">
             How It Started
           </h2>
 
-          <div className="space-y-6 text-brand-dark/75 leading-relaxed">
+          <div className="space-y-6 text-brand-dark/65 leading-[1.8]">
             <p>
               Honey &amp; Bloom started with a simple frustration. After years working in
               Bay Area waxing studios, Maya kept noticing the same thing: clients —
@@ -57,7 +60,7 @@ export function BrandStory() {
 
         {/* Right: brand story image */}
         <FadeUp delay={0.1}>
-          <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
+          <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-warm-lg">
             <Image
               src="/images/pages/brand-story.jpg"
               alt="Inside Honey & Bloom Wax Studio"

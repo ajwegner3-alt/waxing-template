@@ -58,6 +58,9 @@ export function FirstTimerSpotlight() {
         <div className="max-w-4xl mx-auto">
           {/* Section heading */}
           <div className="text-center mb-10">
+            <div className="ornament-divider text-brand-primary mb-6">
+              <span className="text-brand-primary/40 text-xl">&#10045;</span>
+            </div>
             <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-brand-dark mb-3">
               The First&#8209;Timer Package
             </h2>
@@ -67,17 +70,17 @@ export function FirstTimerSpotlight() {
           </div>
 
           {/* Package card */}
-          <div className="bg-white rounded-2xl shadow-sm border border-brand-primary/15 overflow-hidden">
+          <div className="bg-white rounded-3xl shadow-warm-lg border border-brand-primary/10 overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
 
               {/* Left: Pricing + checklist */}
-              <div className="p-8 lg:p-10 flex flex-col justify-center">
+              <div className="p-8 lg:p-12 flex flex-col justify-center">
                 {/* Price display */}
                 <div className="flex items-end gap-3 mb-2">
                   <span className="font-heading text-5xl lg:text-6xl font-bold text-brand-dark">
                     ${price}
                   </span>
-                  <span className="mb-2 inline-flex items-center gap-1 bg-brand-secondary/15 text-brand-secondary text-sm font-semibold px-3 py-1 rounded-full">
+                  <span className="mb-2 inline-flex items-center gap-1 bg-brand-secondary/12 text-brand-secondary text-sm font-semibold px-4 py-1.5 rounded-full">
                     Save ${savings}
                   </span>
                 </div>
@@ -86,11 +89,11 @@ export function FirstTimerSpotlight() {
                 </p>
 
                 {/* Visual checklist */}
-                <ul className="space-y-3" aria-label="Package includes">
+                <ul className="space-y-4" aria-label="Package includes">
                   {checklistItems.map((item) => (
                     <li key={item} className="flex items-center gap-3">
                       <span
-                        className="flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-brand-primary/10"
+                        className="flex-shrink-0 flex items-center justify-center w-7 h-7 rounded-full bg-gradient-to-br from-brand-primary/15 to-brand-primary/5"
                         aria-hidden="true"
                       >
                         <CheckIcon className="w-3.5 h-3.5 text-brand-primary" />
@@ -102,24 +105,26 @@ export function FirstTimerSpotlight() {
               </div>
 
               {/* Right: Context + CTA */}
-              <div className="bg-brand-primary/8 p-8 lg:p-10 flex flex-col justify-center gap-6 border-t lg:border-t-0 lg:border-l border-brand-primary/10">
-                <blockquote className="text-brand-dark/75 text-base leading-relaxed italic">
-                  &ldquo;We designed this package because we know walking into
+              <div className="bg-gradient-to-br from-brand-primary/8 to-brand-primary/4 p-8 lg:p-12 flex flex-col justify-center gap-6 border-t lg:border-t-0 lg:border-l border-brand-primary/8">
+                {/* Decorative quote mark */}
+                <div className="font-heading text-5xl text-brand-primary/20 leading-none">&ldquo;</div>
+                <blockquote className="text-brand-dark/75 text-base leading-relaxed italic -mt-4">
+                  We designed this package because we know walking into
                   your first waxing appointment takes courage. This is our way
-                  of welcoming you properly.&rdquo;
+                  of welcoming you properly.
                 </blockquote>
 
                 {/* Key reassurances */}
-                <ul className="space-y-2 text-sm text-brand-dark/65">
-                  <li className="flex items-center gap-2">
+                <ul className="space-y-3 text-sm text-brand-dark/65">
+                  <li className="flex items-center gap-2.5">
                     <CheckIcon className="w-4 h-4 text-brand-secondary flex-shrink-0" />
                     We explain every step before we do it
                   </li>
-                  <li className="flex items-center gap-2">
+                  <li className="flex items-center gap-2.5">
                     <CheckIcon className="w-4 h-4 text-brand-secondary flex-shrink-0" />
                     You can pause or stop at any time
                   </li>
-                  <li className="flex items-center gap-2">
+                  <li className="flex items-center gap-2.5">
                     <CheckIcon className="w-4 h-4 text-brand-secondary flex-shrink-0" />
                     Private room, clean equipment every time
                   </li>
@@ -130,7 +135,7 @@ export function FirstTimerSpotlight() {
                   Book the First&#8209;Timer Package
                 </BookingLink>
 
-                <p className="text-xs text-center text-brand-dark/45">
+                <p className="text-xs text-center text-brand-dark/40">
                   No deposit required · Free cancellation
                 </p>
               </div>

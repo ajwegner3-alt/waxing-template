@@ -16,8 +16,8 @@ interface BookingLinkProps {
 
 const variantClasses: Record<"header" | "cta" | "inline", string> = {
   header:
-    "bg-brand-primary text-brand-dark px-5 py-2.5 rounded-xl font-semibold hover:bg-brand-primary-dark transition-colors duration-200 min-w-[48px] min-h-[48px] inline-flex items-center justify-center",
-  cta: "bg-brand-primary text-brand-dark px-8 py-4 rounded-xl font-bold text-lg hover:bg-brand-primary-dark transition-colors duration-200 shadow-md min-w-[48px] min-h-[48px] flex items-center justify-center",
+    "bg-brand-primary text-brand-dark px-5 py-2.5 rounded-full font-semibold hover:bg-brand-primary-dark transition-all duration-200 min-w-[48px] min-h-[48px] inline-flex items-center justify-center shadow-warm hover:shadow-warm-lg",
+  cta: "bg-brand-primary text-brand-dark px-8 py-4 rounded-full font-bold text-lg hover:bg-brand-primary-dark transition-all duration-200 shadow-warm-lg hover:shadow-warm-hover min-w-[48px] min-h-[48px] flex items-center justify-center",
   inline:
     "text-brand-primary font-semibold underline-offset-2 hover:underline hover:text-brand-primary-dark transition-colors duration-200 min-w-[48px] min-h-[48px] inline-flex items-center justify-center",
 };

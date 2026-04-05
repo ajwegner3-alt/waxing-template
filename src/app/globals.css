@@ -187,3 +187,74 @@ html {
   height: auto;
   margin: 1.5em 0;
 }
+
+/* ---------------------------------------------------------------------------
+   Warm & Soft Design System Utilities
+   --------------------------------------------------------------------------- */
+
+/* Warm card shadow — diffused, tinted with brand warmth */
+.shadow-warm {
+  box-shadow: 0 4px 24px rgba(212, 165, 116, 0.10), 0 1px 6px rgba(212, 165, 116, 0.06);
+}
+
+.shadow-warm-lg {
+  box-shadow: 0 8px 40px rgba(212, 165, 116, 0.14), 0 2px 12px rgba(212, 165, 116, 0.08);
+}
+
+/* Soft glow on hover */
+.shadow-warm-hover {
+  box-shadow: 0 12px 48px rgba(212, 165, 116, 0.18), 0 4px 16px rgba(212, 165, 116, 0.10);
+}
+
+/* Decorative section wave divider */
+.wave-divider {
+  position: relative;
+  overflow: visible;
+}
+
+.wave-divider::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 48px;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'%3E%3Cpath d='M0 24C240 0 480 48 720 24C960 0 1200 48 1440 24V48H0Z' fill='%23FAF3EF'/%3E%3C/svg%3E") no-repeat center;
+  background-size: 100% 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.wave-divider-white::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'%3E%3Cpath d='M0 24C240 0 480 48 720 24C960 0 1200 48 1440 24V48H0Z' fill='%23ffffff'/%3E%3C/svg%3E") ;
+}
+
+.wave-divider-blush::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'%3E%3Cpath d='M0 24C240 0 480 48 720 24C960 0 1200 48 1440 24V48H0Z' fill='%23F8EAE1'/%3E%3C/svg%3E") ;
+}
+
+.wave-divider-primary::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 48' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'%3E%3Cpath d='M0 24C240 0 480 48 720 24C960 0 1200 48 1440 24V48H0Z' fill='%23FFC30B'/%3E%3C/svg%3E") ;
+}
+
+/* Decorative ornamental divider line */
+.ornament-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.ornament-divider::before,
+.ornament-divider::after {
+  content: "";
+  width: 48px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, currentColor, transparent);
+  opacity: 0.3;
+}
+
+/* Soft inner glow for cards */
+.inner-glow {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 4px 24px rgba(212, 165, 116, 0.10);
+}

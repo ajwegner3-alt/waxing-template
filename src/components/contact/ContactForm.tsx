@@ -61,10 +61,10 @@ export function ContactForm() {
           value={form.name}
           onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
           className="
-            w-full rounded-lg border border-brand-dark/20 bg-white
-            py-3 px-4 text-brand-dark placeholder:text-brand-dark/35
-            focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent
-            transition-shadow duration-150
+            w-full rounded-xl border border-brand-dark/12 bg-white
+            py-3.5 px-4 text-brand-dark placeholder:text-brand-dark/30
+            focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary/30
+            shadow-warm transition-all duration-200
           "
         />
       </div>
@@ -73,7 +73,7 @@ export function ContactForm() {
       <div>
         <label
           htmlFor="contact-phone"
-          className="block text-sm font-medium text-brand-dark mb-1.5"
+          className="block text-sm font-medium text-brand-dark mb-2"
         >
           Phone Number <span className="text-brand-primary">*</span>
         </label>
@@ -86,10 +86,10 @@ export function ContactForm() {
           value={form.phone}
           onChange={(e) => setForm((f) => ({ ...f, phone: e.target.value }))}
           className="
-            w-full rounded-lg border border-brand-dark/20 bg-white
-            py-3 px-4 text-brand-dark placeholder:text-brand-dark/35
-            focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent
-            transition-shadow duration-150
+            w-full rounded-xl border border-brand-dark/12 bg-white
+            py-3.5 px-4 text-brand-dark placeholder:text-brand-dark/30
+            focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary/30
+            shadow-warm transition-all duration-200
           "
         />
       </div>
@@ -98,7 +98,7 @@ export function ContactForm() {
       <div>
         <label
           htmlFor="contact-message"
-          className="block text-sm font-medium text-brand-dark mb-1.5"
+          className="block text-sm font-medium text-brand-dark mb-2"
         >
           Message{" "}
           <span className="text-brand-dark/40 font-normal">(optional)</span>
@@ -110,10 +110,10 @@ export function ContactForm() {
           value={form.message}
           onChange={(e) => setForm((f) => ({ ...f, message: e.target.value }))}
           className="
-            w-full rounded-lg border border-brand-dark/20 bg-white
-            py-3 px-4 text-brand-dark placeholder:text-brand-dark/35
-            focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent
-            transition-shadow duration-150 resize-none
+            w-full rounded-xl border border-brand-dark/12 bg-white
+            py-3.5 px-4 text-brand-dark placeholder:text-brand-dark/30
+            focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary/30
+            shadow-warm transition-all duration-200 resize-none
           "
         />
       </div>
@@ -122,11 +122,11 @@ export function ContactForm() {
       <button
         type="submit"
         className="
-          w-full rounded-lg bg-brand-primary text-white
-          py-3.5 px-6 font-medium text-base
+          w-full rounded-xl bg-brand-primary text-white
+          py-4 px-6 font-medium text-base
           hover:bg-brand-primary-dark
           focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2
-          transition-colors duration-150
+          transition-colors duration-200 shadow-warm
         "
       >
         Send Message

@@ -60,7 +60,7 @@ export function EstheticianProfile() {
       <div className="grid lg:grid-cols-2 gap-12 items-start">
         {/* Left column: image placeholder */}
         <FadeUp>
-          <div className="relative w-full aspect-[3/4] max-w-sm mx-auto lg:mx-0 rounded-2xl overflow-hidden border border-brand-primary/15">
+          <div className="relative w-full aspect-[3/4] max-w-sm mx-auto lg:mx-0 rounded-3xl overflow-hidden border border-brand-primary/8 shadow-warm-lg">
             <Image
               src={member.headshot}
               alt={`${member.name} — ${member.title}`}
@@ -95,7 +95,7 @@ export function EstheticianProfile() {
           </div>
 
           {/* All bio paragraphs — no slice */}
-          <div className="space-y-4 text-brand-dark/75 leading-relaxed mb-8">
+          <div className="space-y-5 text-brand-dark/65 leading-[1.8] mb-8">
             {member.bio.map((paragraph, i) => (
               <p key={i}>{paragraph}</p>
             ))}
@@ -110,7 +110,7 @@ export function EstheticianProfile() {
               {member.specialties.map((specialty, i) => (
                 <span
                   key={i}
-                  className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-brand-primary/10 text-brand-primary-dark border border-brand-primary/20"
+                  className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-medium bg-gradient-to-r from-brand-primary/10 to-brand-primary/5 text-brand-primary-dark border border-brand-primary/12"
                 >
                   {specialty}
                 </span>

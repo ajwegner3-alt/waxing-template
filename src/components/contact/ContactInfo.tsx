@@ -64,7 +64,7 @@ export function ContactInfo() {
 
       {/* Map placeholder */}
       <div
-        className="rounded-xl border border-brand-dark/10 overflow-hidden bg-brand-light"
+        className="rounded-2xl border border-brand-dark/8 overflow-hidden bg-brand-light shadow-warm"
         style={{ minHeight: "200px" }}
       >
         <div className="flex flex-col items-center justify-center h-full py-10 px-6 text-center gap-3">

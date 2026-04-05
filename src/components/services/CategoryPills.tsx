@@ -67,7 +67,7 @@ export function CategoryPills({ categories }: CategoryPillsProps) {
   }
 
   return (
-    <div className="sticky top-16 lg:top-20 z-30 bg-white/95 backdrop-blur-sm border-b border-brand-primary/10">
+    <div className="sticky top-16 lg:top-20 z-30 bg-white/90 backdrop-blur-md border-b border-brand-primary/8 shadow-warm">
       <div
         className="overflow-x-auto scrollbar-hide flex gap-2 px-4 py-3 max-w-7xl mx-auto"
         role="navigation"

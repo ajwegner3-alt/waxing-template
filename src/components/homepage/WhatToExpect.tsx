@@ -147,6 +147,10 @@ export function WhatToExpect() {
       {/* Section header */}
       <FadeUp>
         <div className="text-center mb-12 lg:mb-16 max-w-2xl mx-auto">
+          {/* Ornamental divider */}
+          <div className="ornament-divider text-brand-primary mb-6">
+            <span className="text-brand-primary/40 text-xl">&#10045;</span>
+          </div>
           <h2 className="font-heading text-3xl lg:text-4xl font-semibold text-brand-dark mb-4">
             What to Expect on Your First Visit
           </h2>
@@ -161,21 +165,21 @@ export function WhatToExpect() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {steps.map((step, i) => (
           <FadeUp key={step.title} delay={i * 0.1}>
-            <div className="flex flex-col items-center text-center gap-4">
+            <div className="flex flex-col items-center text-center gap-4 bg-white rounded-3xl p-8 shadow-warm border border-brand-primary/8 hover:shadow-warm-lg transition-shadow duration-300">
               {/* Icon */}
-              <div className="flex items-center justify-center w-20 h-20 rounded-2xl bg-brand-primary/10">
+              <div className="flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-brand-primary/12 to-brand-primary/5">
                 {step.icon}
               </div>
 
               {/* Step number pill */}
-              <div className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-brand-primary text-white text-xs font-bold">
+              <div className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-brand-primary text-white text-xs font-bold shadow-sm">
                 {i + 1}
               </div>
 
               <h3 className="font-heading text-lg font-semibold text-brand-dark">
                 {step.title}
               </h3>
-              <p className="text-brand-dark/65 text-sm leading-relaxed">
+              <p className="text-brand-dark/60 text-sm leading-relaxed">
                 {step.description}
               </p>
             </div>

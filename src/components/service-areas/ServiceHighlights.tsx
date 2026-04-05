@@ -25,7 +25,7 @@ export function ServiceHighlights({ area, services }: ServiceHighlightsProps) {
             <Link
               key={service.slug}
               href={`/services/${service.slug}`}
-              className="group block rounded-2xl border border-brand-light bg-brand-light/40 p-6 hover:border-brand-primary/40 hover:bg-brand-primary/5 transition-all duration-200"
+              className="group block rounded-3xl border border-brand-primary/8 bg-white p-7 shadow-warm hover:shadow-warm-hover transition-all duration-300"
             >
               <h3 className="font-bold text-brand-dark text-lg mb-2 group-hover:text-brand-primary transition-colors duration-200">
                 {service.name}

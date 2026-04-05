@@ -96,7 +96,7 @@ export default async function ServiceDetailPage({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Hero image */}
           <FadeUp>
-            <div className="aspect-[16/9] lg:aspect-[4/3] w-full relative overflow-hidden rounded-2xl">
+            <div className="aspect-[16/9] lg:aspect-[4/3] w-full relative overflow-hidden rounded-3xl shadow-warm-lg">
               <Image
                 src={service.coverImage}
                 fill
@@ -173,10 +173,10 @@ export default async function ServiceDetailPage({
             <ol className="space-y-4">
               {service.preparation.map((step, index) => (
                 <li key={index} className="flex items-start gap-4">
-                  <span className="shrink-0 w-7 h-7 rounded-full bg-brand-primary/15 text-brand-primary text-sm font-bold flex items-center justify-center mt-0.5">
+                  <span className="shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-brand-primary/15 to-brand-primary/5 text-brand-primary text-sm font-bold flex items-center justify-center mt-0.5 shadow-sm">
                     {index + 1}
                   </span>
-                  <p className="text-brand-dark/75 leading-relaxed text-sm flex-1">
+                  <p className="text-brand-dark/65 leading-[1.7] text-sm flex-1">
                     {step}
                   </p>
                 </li>
@@ -198,10 +198,10 @@ export default async function ServiceDetailPage({
             <ol className="space-y-4">
               {service.aftercare.map((tip, index) => (
                 <li key={index} className="flex items-start gap-4">
-                  <span className="shrink-0 w-7 h-7 rounded-full bg-brand-secondary/20 text-brand-secondary text-sm font-bold flex items-center justify-center mt-0.5">
+                  <span className="shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-brand-secondary/20 to-brand-secondary/8 text-brand-secondary text-sm font-bold flex items-center justify-center mt-0.5 shadow-sm">
                     {index + 1}
                   </span>
-                  <p className="text-brand-dark/75 leading-relaxed text-sm flex-1">
+                  <p className="text-brand-dark/65 leading-[1.7] text-sm flex-1">
                     {tip}
                   </p>
                 </li>

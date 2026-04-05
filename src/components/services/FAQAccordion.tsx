@@ -21,9 +21,9 @@ export function FAQAccordion({ faqs }: FAQAccordionProps) {
       {faqs.map((faq, index) => (
         <details
           key={index}
-          className="group border border-brand-primary/15 rounded-xl overflow-hidden"
+          className="group border border-brand-primary/10 rounded-2xl overflow-hidden shadow-warm"
         >
-          <summary className="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-brand-dark hover:bg-brand-light/50 transition-colors duration-200 [&::-webkit-details-marker]:hidden">
+          <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-5 text-brand-dark hover:bg-brand-light/40 transition-colors duration-200 [&::-webkit-details-marker]:hidden">
             <span className="font-medium text-base leading-snug pr-4">
               {faq.question}
             </span>
@@ -45,7 +45,7 @@ export function FAQAccordion({ faqs }: FAQAccordionProps) {
               </svg>
             </span>
           </summary>
-          <div className="px-5 pb-4 pt-1 text-brand-dark/75 text-sm leading-relaxed border-t border-brand-primary/10">
+          <div className="px-6 pb-5 pt-1 text-brand-dark/65 text-sm leading-[1.7] border-t border-brand-primary/8">
             {faq.answer}
           </div>
         </details>

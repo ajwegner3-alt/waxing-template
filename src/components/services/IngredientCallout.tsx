@@ -57,7 +57,7 @@ export function IngredientCallout({ ingredients }: IngredientCalloutProps) {
   if (ingredients.length === 0) return null;
 
   return (
-    <section className="bg-brand-secondary/8 rounded-2xl p-6 md:p-8">
+    <section className="bg-gradient-to-br from-brand-secondary/8 to-brand-secondary/3 rounded-3xl p-8 md:p-10 shadow-warm border border-brand-secondary/8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* What We Use */}
         <div>

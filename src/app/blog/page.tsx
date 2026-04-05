@@ -63,7 +63,7 @@ export default async function BlogPage() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group block rounded-2xl border border-brand-primary/20 bg-white hover:shadow-md transition-shadow duration-200 overflow-hidden"
+                className="group block rounded-3xl border border-brand-primary/8 bg-white shadow-warm hover:shadow-warm-hover transition-all duration-300 overflow-hidden"
               >
                 {/* Cover image */}
                 {post.image && (

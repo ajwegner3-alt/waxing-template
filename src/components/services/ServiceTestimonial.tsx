@@ -17,7 +17,7 @@ export function ServiceTestimonial({ testimonial }: ServiceTestimonialProps) {
 
   return (
     <FadeUp>
-      <blockquote className="bg-brand-light rounded-2xl p-6 md:p-8 relative">
+      <blockquote className="bg-brand-light rounded-3xl p-8 md:p-10 relative shadow-warm border border-brand-primary/6">
         {/* Decorative opening quote mark */}
         <span
           className="absolute top-4 left-6 text-6xl leading-none text-brand-primary/15 font-serif select-none"

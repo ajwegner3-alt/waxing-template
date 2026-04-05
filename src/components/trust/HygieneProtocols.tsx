@@ -90,7 +90,7 @@ export function HygieneProtocols() {
           <div className="space-y-4">
             {protocols.map((protocol, i) => (
               <FadeUp key={i} delay={i * 0.07}>
-                <div className="flex items-start gap-4 p-5 rounded-xl bg-brand-light/50 border border-brand-secondary/10">
+                <div className="flex items-start gap-4 p-6 rounded-2xl bg-brand-light/50 border border-brand-secondary/8 shadow-warm hover:shadow-warm-lg transition-shadow duration-300">
                   {/* Checkmark */}
                   <div className="flex-shrink-0 mt-0.5">
                     <CheckIcon className="w-5 h-5 text-brand-secondary" />
@@ -113,7 +113,7 @@ export function HygieneProtocols() {
 
         {/* Right: hygiene image */}
         <FadeUp delay={0.1} className="hidden lg:block">
-          <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden">
+          <div className="relative w-full aspect-[3/4] rounded-3xl overflow-hidden shadow-warm-lg">
             <Image
               src="/images/pages/hygiene.jpg"
               alt="Clean and organized waxing supplies at Honey & Bloom"

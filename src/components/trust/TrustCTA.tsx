@@ -127,11 +127,11 @@ export function TrustCTA({ page }: TrustCTAProps) {
           </div>
 
           {/* Inline trust badges */}
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
+          <div className="flex flex-wrap items-center justify-center gap-5 pt-2">
             {trustBadges.map((badge, i) => (
               <div
                 key={i}
-                className="flex items-center gap-1.5 text-white/75 text-sm"
+                className="flex items-center gap-2 text-white/70 text-sm bg-white/8 rounded-full px-4 py-1.5"
               >
                 {badge.icon}
                 <span>{badge.label}</span>
