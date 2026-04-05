@@ -9,13 +9,13 @@ import { serviceAreas } from "@/content/service-areas";
  * Generates /sitemap.xml at build time covering all ~31 routes.
  *
  * Route breakdown:
- *   6  static pages (/, /services, /book, /about, /faq, /contact)
+ *   7  static pages (/, /services, /book, /about, /faq, /contact, /first-visit)
  *   2  new static pages (/blog, /service-areas)
  *  14  service detail pages
  *   3  blog post pages
  *   6  service area pages
  * ──────────────────────────
- *  31  total
+ *  32  total
  */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = clientConfig.siteUrl;
@@ -57,6 +57,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.6,
+    },
+    {
+      url: `${base}/first-visit`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
     {
       url: `${base}/blog`,
