@@ -7,6 +7,7 @@
  */
 
 import React from "react";
+import Image from "next/image";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { FadeUp } from "@/components/ui/FadeUp";
 
@@ -70,42 +71,58 @@ const protocols: ProtocolItem[] = [
 export function HygieneProtocols() {
   return (
     <SectionWrapper bg="white" padding="md">
-      <div className="max-w-3xl mx-auto">
-        <FadeUp>
-          <div className="mb-8">
-            <h2 className="font-heading text-2xl lg:text-3xl font-semibold text-brand-dark mb-3">
-              Our Hygiene Standards
-            </h2>
-            <p className="text-brand-dark/65 leading-relaxed">
-              Cleanliness isn&apos;t a selling point — it&apos;s a baseline. Here&apos;s exactly
-              what we do before, during, and after every appointment to keep you safe.
-            </p>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
+        {/* Left: checklist */}
+        <div>
+          <FadeUp>
+            <div className="mb-8">
+              <h2 className="font-heading text-2xl lg:text-3xl font-semibold text-brand-dark mb-3">
+                Our Hygiene Standards
+              </h2>
+              <p className="text-brand-dark/65 leading-relaxed">
+                Cleanliness isn&apos;t a selling point — it&apos;s a baseline. Here&apos;s exactly
+                what we do before, during, and after every appointment to keep you safe.
+              </p>
+            </div>
+          </FadeUp>
+
+          {/* Protocol checklist */}
+          <div className="space-y-4">
+            {protocols.map((protocol, i) => (
+              <FadeUp key={i} delay={i * 0.07}>
+                <div className="flex items-start gap-4 p-5 rounded-xl bg-brand-light/50 border border-brand-secondary/10">
+                  {/* Checkmark */}
+                  <div className="flex-shrink-0 mt-0.5">
+                    <CheckIcon className="w-5 h-5 text-brand-secondary" />
+                  </div>
+
+                  {/* Text */}
+                  <div>
+                    <p className="font-semibold text-brand-dark text-sm mb-0.5">
+                      {protocol.title}
+                    </p>
+                    <p className="text-brand-dark/60 text-sm leading-relaxed">
+                      {protocol.detail}
+                    </p>
+                  </div>
+                </div>
+              </FadeUp>
+            ))}
+          </div>
+        </div>
+
+        {/* Right: hygiene image */}
+        <FadeUp delay={0.1} className="hidden lg:block">
+          <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden">
+            <Image
+              src="/images/pages/hygiene.jpg"
+              alt="Clean and organized waxing supplies at Honey & Bloom"
+              fill
+              className="object-cover"
+              sizes="50vw"
+            />
           </div>
         </FadeUp>
-
-        {/* Protocol checklist */}
-        <div className="space-y-4">
-          {protocols.map((protocol, i) => (
-            <FadeUp key={i} delay={i * 0.07}>
-              <div className="flex items-start gap-4 p-5 rounded-xl bg-brand-light/50 border border-brand-secondary/10">
-                {/* Checkmark */}
-                <div className="flex-shrink-0 mt-0.5">
-                  <CheckIcon className="w-5 h-5 text-brand-secondary" />
-                </div>
-
-                {/* Text */}
-                <div>
-                  <p className="font-semibold text-brand-dark text-sm mb-0.5">
-                    {protocol.title}
-                  </p>
-                  <p className="text-brand-dark/60 text-sm leading-relaxed">
-                    {protocol.detail}
-                  </p>
-                </div>
-              </div>
-            </FadeUp>
-          ))}
-        </div>
       </div>
     </SectionWrapper>
   );

@@ -9,6 +9,7 @@
  */
 
 import type { Metadata } from "next";
+import Image from "next/image";
 import { faqs } from "@/content/faqs";
 import { generateFAQPageSchema } from "@/lib/schema";
 import { FAQCategorySection, TrustCTA } from "@/components/trust";
@@ -96,6 +97,18 @@ export default function FAQPage() {
           </div>
         </FadeUp>
       </SectionWrapper>
+
+      {/* Hero image banner */}
+      <div className="relative w-full aspect-[3/1] overflow-hidden">
+        <Image
+          src="/images/pages/faq-hero.jpg"
+          alt="Honey & Bloom — FAQ and waxing information"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+      </div>
 
       {/* 7 category sections — alternating white/light */}
       {FAQ_CATEGORIES.map((cat, i) => {

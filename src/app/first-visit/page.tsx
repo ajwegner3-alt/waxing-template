@@ -11,6 +11,7 @@
  */
 
 import type { Metadata } from "next";
+import Image from "next/image";
 import { generatePageMetadata } from "@/lib/metadata";
 import { SectionWrapper, FadeUp, BookingLink } from "@/components/ui";
 import { Breadcrumbs } from "@/components/layout";
@@ -114,6 +115,20 @@ export default function FirstVisitPage() {
       </SectionWrapper>
 
       {/* ------------------------------------------------------------------ */}
+      {/* Hero image banner */}
+      {/* ------------------------------------------------------------------ */}
+      <div className="relative w-full aspect-[3/1] overflow-hidden">
+        <Image
+          src="/images/pages/first-visit-hero.jpg"
+          alt="A welcoming first wax appointment at Honey & Bloom"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+      </div>
+
+      {/* ------------------------------------------------------------------ */}
       {/* What to Expect — existing homepage section */}
       {/* ------------------------------------------------------------------ */}
       <WhatToExpect />
@@ -134,23 +149,39 @@ export default function FirstVisitPage() {
           </div>
         </FadeUp>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {prepTips.map((item, i) => (
-            <FadeUp key={item.tip} delay={i * 0.08}>
-              <div className="bg-brand-light rounded-2xl p-6 h-full">
-                {/* Number badge */}
-                <div className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-brand-primary text-white text-sm font-bold mb-4">
-                  {i + 1}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-10 items-start max-w-5xl mx-auto">
+          {/* Tip grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {prepTips.map((item, i) => (
+              <FadeUp key={item.tip} delay={i * 0.08}>
+                <div className="bg-brand-light rounded-2xl p-6 h-full">
+                  {/* Number badge */}
+                  <div className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-brand-primary text-white text-sm font-bold mb-4">
+                    {i + 1}
+                  </div>
+                  <h3 className="font-heading text-base font-semibold text-brand-dark mb-2">
+                    {item.tip}
+                  </h3>
+                  <p className="text-brand-dark/65 text-sm leading-relaxed">
+                    {item.detail}
+                  </p>
                 </div>
-                <h3 className="font-heading text-base font-semibold text-brand-dark mb-2">
-                  {item.tip}
-                </h3>
-                <p className="text-brand-dark/65 text-sm leading-relaxed">
-                  {item.detail}
-                </p>
-              </div>
-            </FadeUp>
-          ))}
+              </FadeUp>
+            ))}
+          </div>
+
+          {/* Side image — hidden on mobile */}
+          <FadeUp delay={0.1} className="hidden lg:block">
+            <div className="relative w-64 aspect-[3/4] rounded-2xl overflow-hidden">
+              <Image
+                src="/images/pages/preparation.jpg"
+                alt="Getting ready for your waxing appointment"
+                fill
+                className="object-cover"
+                sizes="256px"
+              />
+            </div>
+          </FadeUp>
         </div>
       </SectionWrapper>
 

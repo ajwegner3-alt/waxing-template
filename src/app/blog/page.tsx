@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { generatePageMetadata } from "@/lib/metadata";
 import { getAllPosts } from "@/lib/blog";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
@@ -64,6 +65,19 @@ export default async function BlogPage() {
                 href={`/blog/${post.slug}`}
                 className="group block rounded-2xl border border-brand-primary/20 bg-white hover:shadow-md transition-shadow duration-200 overflow-hidden"
               >
+                {/* Cover image */}
+                {post.image && (
+                  <div className="relative w-full aspect-[16/10] overflow-hidden">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                )}
+
                 {/* Card body */}
                 <div className="p-6 flex flex-col gap-3">
                   {/* Category tag */}

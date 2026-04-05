@@ -9,6 +9,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { FadeUp } from "@/components/ui/FadeUp";
 import { serviceCategories } from "@/content/services";
@@ -127,7 +128,21 @@ export function ServicesPreview() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {serviceCategories.map((category, i) => (
           <FadeUp key={category.slug} delay={i * 0.1}>
-            <div className="group relative flex flex-col bg-white rounded-2xl border border-brand-primary/12 p-6 gap-4 hover:border-brand-primary/40 hover:shadow-md transition-all duration-200">
+            <div className="group relative flex flex-col bg-white rounded-2xl border border-brand-primary/12 overflow-hidden gap-4 hover:border-brand-primary/40 hover:shadow-md transition-all duration-200">
+              {/* Category cover image */}
+              {category.coverImage && (
+                <div className="relative w-full aspect-[16/9] overflow-hidden">
+                  <Image
+                    src={category.coverImage}
+                    alt={category.name}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                </div>
+              )}
+
+              <div className="flex flex-col gap-4 p-6 pt-0">
               {/* Icon */}
               <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-brand-primary/10 group-hover:bg-brand-primary/18 transition-colors duration-200">
                 {iconMap[category.iconName] ?? iconMap["sparkles"]}
@@ -164,6 +179,7 @@ export function ServicesPreview() {
                   />
                 </svg>
               </Link>
+              </div>
             </div>
           </FadeUp>
         ))}

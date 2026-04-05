@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { generatePageMetadata } from "@/lib/metadata";
 import { SectionWrapper, FadeUp } from "@/components/ui";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
@@ -40,6 +41,18 @@ export default function ContactPage() {
           </div>
         </FadeUp>
       </SectionWrapper>
+
+      {/* Hero image banner */}
+      <div className="relative w-full aspect-[3/1] overflow-hidden">
+        <Image
+          src="/images/pages/contact-hero.jpg"
+          alt="Honey & Bloom Wax Studio — get in touch"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+      </div>
 
       {/* Two-column contact section */}
       <SectionWrapper bg="white" padding="md">

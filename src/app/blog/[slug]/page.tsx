@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { generatePageMetadata } from "@/lib/metadata";
 import { getAllPosts } from "@/lib/blog";
 import { getServiceBySlug } from "@/content/services";
@@ -151,6 +152,20 @@ export default async function BlogPostPage({
           </div>
         </FadeUp>
       </SectionWrapper>
+
+      {/* Hero image — full-width banner between header and body */}
+      {postMeta.image && (
+        <div className="relative w-full aspect-[3/1] overflow-hidden">
+          <Image
+            src={postMeta.image}
+            alt={postMeta.title}
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
+          />
+        </div>
+      )}
 
       {/* Post body */}
       <SectionWrapper bg="white">

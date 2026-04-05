@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { serviceAreas } from "@/content/service-areas";
 import { clientConfig } from "@/content/client.config";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
@@ -41,6 +42,18 @@ export default function ServiceAreasIndexPage() {
           items={[{ label: "Service Areas", href: "/service-areas" }]}
         />
       </SectionWrapper>
+
+      {/* Hero image banner */}
+      <div className="relative w-full aspect-[3/1] overflow-hidden">
+        <Image
+          src="/images/pages/service-areas-hero.jpg"
+          alt="Omaha and surrounding area neighborhoods served by Honey & Bloom"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+      </div>
 
       {/* Header */}
       <SectionWrapper bg="light" padding="md">
