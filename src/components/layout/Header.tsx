@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useScroll, useMotionValueEvent } from "motion/react";
 import { clientConfig } from "@/content/client.config";
 import { BookingLink } from "@/components/ui";
@@ -17,6 +18,8 @@ const NAV_LINKS = [
 
 export function Header() {
   const { isMobileNavOpen, setIsMobileNavOpen } = useNav();
+  const pathname = usePathname();
+  const isHome = pathname === "/";
   const { scrollY } = useScroll();
   const [scrolled, setScrolled] = useState(false);
 
@@ -24,10 +27,14 @@ export function Header() {
     setScrolled(latest > 60);
   });
 
+  // Only use white/transparent text on the homepage (dark hero).
+  // All other pages use dark text at all times.
+  const useLightText = isHome && !scrolled;
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#FAF3EF] shadow-sm" : "bg-transparent"
+        useLightText ? "bg-transparent" : "bg-[#FAF3EF] shadow-sm"
       }`}
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
@@ -37,7 +44,7 @@ export function Header() {
           <Link
             href="/"
             className={`font-heading font-semibold text-xl lg:text-2xl transition-colors duration-300 ${
-              scrolled ? "text-[#2C2C2C]" : "text-white"
+              useLightText ? "text-white" : "text-[#2C2C2C]"
             }`}
           >
             {clientConfig.name}
@@ -53,9 +60,9 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 className={`text-sm font-medium transition-colors duration-200 hover:underline underline-offset-4 ${
-                  scrolled
-                    ? "text-[#2C2C2C] hover:text-[#8BAB8D]"
-                    : "text-white/90 hover:text-white"
+                  useLightText
+                    ? "text-white/90 hover:text-white"
+                    : "text-[#2C2C2C] hover:text-[#8BAB8D]"
                 }`}
               >
                 {link.label}
@@ -80,17 +87,17 @@ export function Header() {
             <span className="flex flex-col gap-1.5">
               <span
                 className={`block w-6 h-0.5 transition-all duration-300 ${
-                  scrolled ? "bg-[#2C2C2C]" : "bg-white"
+                  useLightText ? "bg-white" : "bg-[#2C2C2C]"
                 }`}
               />
               <span
                 className={`block w-6 h-0.5 transition-all duration-300 ${
-                  scrolled ? "bg-[#2C2C2C]" : "bg-white"
+                  useLightText ? "bg-white" : "bg-[#2C2C2C]"
                 }`}
               />
               <span
                 className={`block w-6 h-0.5 transition-all duration-300 ${
-                  scrolled ? "bg-[#2C2C2C]" : "bg-white"
+                  useLightText ? "bg-white" : "bg-[#2C2C2C]"
                 }`}
               />
             </span>
